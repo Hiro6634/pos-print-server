@@ -77,10 +77,13 @@ class ConfigHelper(metaclass=Singleton):
     def isInitialized(self):
         return self.initialized
         
+    def setLoopPollingTime(self, loopPollingTime):
+        self.config_dict[self.LOOP_POLLING_TIME] = loopPollingTime
+
     def getLoopPollingTime(self):
         return self.config_dict[self.LOOP_POLLING_TIME] \
             if self.LOOP_POLLING_TIME in self.config_dict else self.Def_LoopPollingTime 
-            
+
     def setTerminalId(self, terminalId):
         self.config_dict[self.TERMINAL_ID]=terminalId
 

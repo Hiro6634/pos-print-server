@@ -7,7 +7,7 @@ from  firebase_admin import credentials
 from firebase_admin import firestore
 import time
 
-class MyDb:
+class TicketDb:
     def __init__(self):
         cred = credentials.Certificate("ajbpos-firebase-adminsdk-ao7l2-d308d8b1bc.json")
         firebase_admin.initialize_app(cred, {
@@ -42,16 +42,4 @@ class MyDb:
 
         doc_watch = doc_ref.on_snapshot(self.on_snapshot)
 
-def myFunction(ticket):
-    print(json(ticket))
 
-def main():
-    db = MyDb()
-
-    db.watchQueue(myFunction)
-
-    while(True):
-        pass
-
-if __name__ == '__main__':
-    main()
