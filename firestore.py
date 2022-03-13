@@ -1,4 +1,5 @@
 from gc import callbacks
+import json
 import threading
 from tracemalloc import Snapshot
 import firebase_admin
@@ -16,17 +17,6 @@ class MyDb:
         self.db = firestore.client()
         self.callback_done = threading.Event()
 
-    def getDoc(self):
-        doc_ref = self.db.collection(u'printers').document(u'PRN1')
-
-        doc = doc_ref.get()
-
-        if doc.exists:
-            print(f'Document data: {doc.to_dict()}')
-        else:
-            print('No such document')
-
-
     def on_snapshot(self, doc_snapshot, changes, read_time):
         
         for doc in doc_snapshot:
@@ -35,7 +25,7 @@ class MyDb:
 
             ticket = doc_ref.get()
             if ticket.exists:
-                print('Ticket Data: ',ticket.to_dict())
+                self.callbackFn(ticket)
 
                 printedTicket_ref = self.db.collection(u'printers').document(u'PRN1').collection(u'printed').document(doc.id)
                 printedTicket_ref.set(
@@ -46,35 +36,19 @@ class MyDb:
             self.db.collection(u'printers').document(u'PRN1').collection(u'queue').document(doc.id).delete()
         self.callback_done.set()
 
-    def watchDoc(self):
+    def watchQueue(self, callbackFn):
+        self.callbackFn = callbackFn
         doc_ref = self.db.collection(u'printers').document(u'PRN1').collection(u'queue')
 
         doc_watch = doc_ref.on_snapshot(self.on_snapshot)
 
-def getDocument():
-
-    cred = credentials.Certificate("ajbpos-firebase-adminsdk-ao7l2-d308d8b1bc.json")
-    firebase_admin.initialize_app(cred, {
-        'projetctId': 'ajbpos'
-    })
-
-    db = firestore.client()
-
-    doc_ref = db.collection(u'printers').document(u'PRN1')
-
-    doc = doc_ref.get()
-
-    if doc.exists:
-        print(f'Document data: {doc.to_dict()}')
-    else:
-        print('No such document')
-
+def myFunction(ticket):
+    print(json(ticket))
 
 def main():
     db = MyDb()
 
-    #db.getDoc()
-    db.watchDoc()
+    db.watchQueue(myFunction)
 
     while(True):
         pass
