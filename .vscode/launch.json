@@ -6,7 +6,7 @@
     "configurations": [
 
         {
-            "name": "Python: firestore.py",
+            "name": "Python: getDocTest.py",
             "type": "python",
             "request": "launch",
             "program": "${file}",
