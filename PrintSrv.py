@@ -48,6 +48,7 @@ class PrintSrv:
         self.log = logger.logger
         self.ticketDb = TicketDb() 
         self.ticketDb.watchQueue(Ticket.Process)
+       #TODO: Eliminar el Worker thread salvo que sea para releer la configuracion 
         self.worker = WorkerThread(Callback)
         self.worker.start()
         self.ready = False
