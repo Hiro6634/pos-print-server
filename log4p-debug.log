@@ -1,214 +1,11 @@
-2022-03-13 13:01:43,635 DEBUG PrintSrv.py line+29 start [MainThread]: WorkerThread Started...
-2022-03-13 13:01:43,636 INFO  PrintSrv.py line+64 <module> [MainThread]: 
+2022-03-15 12:05:01,885 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 12:05:01,886 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:05:01,891 INFO  PrintSrv.py line+71 <module> [MainThread]: 
     DataServerAddr: 127.0.0.1
     DataServerPort: 8000
     ProductPollingTime: 30
         
-2022-03-13 13:01:43,638 DEBUG PrintSrv.py line+34 stop [MainThread]: WorkerThread Stopped..
-2022-03-13 13:01:43,638 DEBUG PrintSrv.py line+66 <module> [MainThread]: Bye
-2022-03-13 13:03:45,367 DEBUG PrintSrv.py line+29 start [MainThread]: WorkerThread Started...
-2022-03-13 13:03:45,368 INFO  PrintSrv.py line+64 <module> [MainThread]: 
-    DataServerAddr: 127.0.0.1
-    DataServerPort: 8000
-    ProductPollingTime: 30
-        
-2022-03-13 13:05:16,264 DEBUG PrintSrv.py line+29 start [MainThread]: WorkerThread Started...
-2022-03-13 13:05:16,265 INFO  PrintSrv.py line+64 <module> [MainThread]: 
-    DataServerAddr: 127.0.0.1
-    DataServerPort: 8000
-    ProductPollingTime: 30
-        
-2022-03-13 13:05:16,286 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:06:12,499 DEBUG PrintSrv.py line+29 start [MainThread]: WorkerThread Started...
-2022-03-13 13:06:12,500 INFO  PrintSrv.py line+65 <module> [MainThread]: 
-    DataServerAddr: 127.0.0.1
-    DataServerPort: 8000
-    ProductPollingTime: 30
-        
-2022-03-13 13:06:12,552 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:06:42,590 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:07:12,614 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:07:42,641 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:08:12,662 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:08:42,702 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:09:12,742 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:09:42,768 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:10:12,796 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:10:42,832 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:11:12,856 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:11:42,876 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:12:12,903 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:12:42,944 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:13:12,960 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:13:42,998 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:14:13,038 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:14:43,078 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:15:13,118 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:15:43,140 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:16:13,153 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:16:43,193 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:17:13,217 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:17:43,254 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:18:13,294 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:18:43,338 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:19:13,370 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:19:43,410 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:20:13,450 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:20:43,490 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:21:13,530 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:21:43,568 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:22:13,610 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:22:43,650 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:23:13,690 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:23:43,722 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:24:13,762 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:24:43,802 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:25:13,820 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:25:43,858 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:26:13,898 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:26:43,930 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:27:13,962 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:27:44,002 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:28:14,046 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:28:44,086 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:29:14,126 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:29:44,166 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:30:14,198 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:30:44,238 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:31:14,278 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:31:44,318 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:32:14,354 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:32:44,394 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:33:14,429 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:33:44,466 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:34:14,506 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:34:44,538 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:35:14,578 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:35:44,610 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:36:14,650 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:36:44,682 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:37:14,722 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:37:44,762 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:38:14,783 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:38:44,819 DEBUG PrintSrv.py line+22 worker [Thread-7]: timePolling: 30
-2022-03-13 13:57:32,292 DEBUG PrintSrv.py line+30 start [MainThread]: WorkerThread Started...
-2022-03-13 13:57:32,293 INFO  PrintSrv.py line+67 <module> [MainThread]: 
-    DataServerAddr: 127.0.0.1
-    DataServerPort: 8000
-    ProductPollingTime: 30
-        
-2022-03-13 13:57:32,356 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 13:58:02,380 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 13:58:32,394 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 13:59:02,434 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 13:59:32,480 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:00:02,520 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:00:32,546 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:01:02,574 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:01:32,610 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:02:02,642 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:02:32,683 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:03:02,718 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:03:32,738 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:04:02,778 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:04:32,792 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:05:02,828 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:05:32,871 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:06:02,904 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:06:32,942 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:07:02,982 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:07:33,020 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:08:03,033 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:08:33,068 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:09:03,106 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:09:33,142 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:10:03,178 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:10:33,218 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:11:03,262 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:11:33,302 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:12:03,342 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:12:33,382 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:13:03,426 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:13:33,466 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:14:03,506 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:14:33,546 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:14:42,321 DEBUG PrintSrv.py line+30 start [MainThread]: WorkerThread Started...
-2022-03-13 14:14:42,325 INFO  PrintSrv.py line+67 <module> [MainThread]: 
-    DataServerAddr: 127.0.0.1
-    DataServerPort: 8000
-    ProductPollingTime: 30
-        
-2022-03-13 14:14:42,411 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:15:03,586 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:15:12,438 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:15:33,626 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:15:42,478 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:16:03,670 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:16:12,518 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:16:33,710 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:16:42,558 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:17:03,750 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:17:12,598 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:17:33,790 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:17:42,639 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:18:03,830 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:18:12,678 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:18:33,862 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:18:42,718 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:19:03,902 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:19:12,751 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:19:33,933 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:19:42,766 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:20:03,979 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:20:12,798 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:20:34,013 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:20:42,838 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:21:04,050 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:21:12,874 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:21:34,087 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:21:42,913 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:22:04,130 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:22:12,950 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:22:34,167 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:22:42,973 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:23:04,197 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:23:13,010 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:23:34,234 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:23:43,059 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:24:04,274 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:24:13,099 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:24:34,288 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:24:43,138 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:25:04,329 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:25:13,175 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:25:34,366 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:25:43,215 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:26:04,398 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:26:13,254 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:26:34,410 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:26:43,294 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:27:04,450 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:27:13,338 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:27:34,489 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:27:43,378 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:28:04,526 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:28:13,418 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:28:34,566 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:28:43,458 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:29:04,586 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:29:13,498 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:29:34,626 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:29:43,538 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:30:04,666 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:30:12,861 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
-2022-03-13 14:30:12,863 INFO  PrintSrv.py line+70 <module> [MainThread]: 
-    DataServerAddr: 127.0.0.1
-    DataServerPort: 8000
-    ProductPollingTime: 30
-        
-2022-03-13 14:30:12,908 DEBUG PrintSrv.py line+25 worker [Thread-8]: timePolling: 30
-2022-03-13 14:30:13,578 DEBUG PrintSrv.py line+23 worker [Thread-7]: timePolling: 30
-2022-03-13 14:30:14,704 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception Process() missing 1 required positional argument: 'ticket' and will exit.
+2022-03-15 12:05:03,445 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception Process() missing 1 required positional argument: 'ticket' and will exit.
 Traceback (most recent call last):
   File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
     self._on_response(response)
@@ -221,4 +18,297 @@ Traceback (most recent call last):
   File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
     self.callbackFn(ticket)
 TypeError: Process() missing 1 required positional argument: 'ticket'
-2022-03-13 14:30:14,918 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 12:05:03,644 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 12:05:31,914 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:06:01,951 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:06:31,986 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:07:02,026 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:07:32,066 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:08:02,098 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:08:32,139 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:09:02,177 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:09:32,217 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:10:02,254 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:10:32,268 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:11:02,280 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:11:32,318 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:12:02,359 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:12:32,398 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:13:02,438 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:13:32,469 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:14:02,506 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:14:32,546 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:15:02,587 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:15:32,626 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:16:02,666 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:16:32,706 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:17:02,738 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:17:32,771 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:18:02,810 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:18:32,850 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:19:02,872 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:19:32,910 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:20:02,950 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:20:32,990 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:21:03,030 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:21:33,071 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:22:03,104 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:22:33,142 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:23:03,168 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:23:33,209 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:24:03,249 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:24:33,258 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:25:03,298 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:25:33,338 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:26:03,372 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:26:33,392 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:27:03,428 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:27:33,466 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:28:03,501 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:28:33,538 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:29:03,578 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:29:33,610 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:30:03,650 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:30:33,685 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:31:03,722 DEBUG PrintSrv.py line+25 worker [Thread-7]: timePolling: 30
+2022-03-15 12:33:46,702 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 12:33:46,703 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 12:33:46,704 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 13:06:53,743 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 13:06:53,753 DEBUG PrintSrv.py line+25 worker [Thread-8]: timePolling: 30
+2022-03-15 13:06:53,753 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 13:11:06,656 DEBUG PrintSrv.py line+25 worker [Thread-8]: timePolling: 30
+2022-03-15 13:11:07,677 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'DocumentSnapshot' object has no attribute 'str' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 29, in on_snapshot
+    print(ticket.str())
+AttributeError: 'DocumentSnapshot' object has no attribute 'str'
+2022-03-15 13:11:07,881 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 13:14:32,932 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 13:14:32,934 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 13:14:32,934 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 13:15:32,318 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 13:17:24,198 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 13:17:24,199 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 13:17:24,199 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 13:33:20,924 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 13:33:20,926 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 13:33:20,926 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:22:03,324 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:22:03,326 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:22:03,327 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:24:27,804 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:24:27,805 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:24:27,806 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:25:02,125 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:25:02,119 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'DocumentSnapshot' object has no attribute 'user' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 6, in Process
+    print(ticket.user.displayName)
+AttributeError: 'DocumentSnapshot' object has no attribute 'user'
+2022-03-15 19:25:02,356 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 19:25:32,166 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:25:53,009 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:25:53,010 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:25:53,011 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:25:54,538 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'DocumentSnapshot' object has no attribute 'user' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 6, in Process
+    print(ticket.user.displayName)
+AttributeError: 'DocumentSnapshot' object has no attribute 'user'
+2022-03-15 19:25:54,659 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 19:26:23,026 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:26:53,061 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:27:23,106 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:27:53,130 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:28:23,170 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:28:53,211 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:29:23,244 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:29:53,282 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:30:04,133 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:30:04,134 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:30:04,137 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:30:08,938 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'DocumentSnapshot' object has no attribute 'data' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 6, in Process
+    print(ticket.data())
+AttributeError: 'DocumentSnapshot' object has no attribute 'data'
+2022-03-15 19:30:09,176 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 19:30:34,185 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:31:04,224 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:31:34,262 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:31:56,731 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:31:56,732 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:31:56,732 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:32:52,256 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:32:52,259 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:32:52,259 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:33:21,693 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:33:21,695 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:33:21,694 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:33:25,148 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'pirulo' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 6, in Process
+    print(ticket['pirulo'])
+KeyError: 'pirulo'
+2022-03-15 19:33:25,398 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 19:36:43,481 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:36:43,482 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:36:43,483 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:36:44,792 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'dict' object has no attribute 'has_key' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 6, in Process
+    if ticket.has_key('user'):
+AttributeError: 'dict' object has no attribute 'has_key'
+2022-03-15 19:36:44,968 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 19:37:13,493 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:37:43,530 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:38:23,922 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:38:23,923 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:38:23,924 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:46:39,454 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:46:39,456 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:46:39,456 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 19:46:46,502 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception unsupported operand type(s) for +: 'int' and 'str' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 10, in Process
+    print(item['quantity']+ "  "+ item['description'])
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2022-03-15 19:46:46,758 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 19:47:09,462 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:47:39,484 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 19:47:45,352 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 19:47:45,354 DEBUG PrintSrv.py line+25 worker [Thread-8]: timePolling: 30
+2022-03-15 19:47:45,355 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        

@@ -3,4 +3,9 @@ class Ticket:
         pass
 
     def Process(self, ticket):
-        print(ticket)
+        if 'user' in ticket:
+            print(ticket['user']['displayName'])
+        if 'items' in ticket:
+            for item in ticket['items']:
+                print(str(item['quantity'])+ "  "+ item['description'])
+            
