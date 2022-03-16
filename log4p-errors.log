@@ -127,3 +127,114 @@ Traceback (most recent call last):
   File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 10, in Process
     print(item['quantity']+ "  "+ item['description'])
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
+2022-03-15 23:48:36,281 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception __init__() takes 2 positional arguments but 3 were given and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket(self, ticket)
+TypeError: __init__() takes 2 positional arguments but 3 were given
+2022-03-15 23:49:23,734 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'printAt' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket( ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 18, in __init__
+    self.printAt=ticket[self.USER][self.PRINT_AT] if self.PRINT_AT in ticket else ""
+KeyError: 'printAt'
+2022-03-16 00:06:27,435 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception __str__ returned non-string (type NoneType) and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 8, in process
+    print(self.ticket)
+TypeError: __str__ returned non-string (type NoneType)
+2022-03-16 00:07:08,657 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'Ticket' object is not callable and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 8, in process
+    print(self.ticket())
+TypeError: 'Ticket' object is not callable
+2022-03-16 00:08:46,774 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception __str__ returned non-string (type NoneType) and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 8, in process
+    print(str(self.ticket))
+TypeError: __str__ returned non-string (type NoneType)
+2022-03-16 00:40:56,157 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'list' object has no attribute 'keys' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket( ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 20, in __init__
+    for key in ticket[self.ITEMS].keys():
+AttributeError: 'list' object has no attribute 'keys'
+2022-03-16 00:45:49,696 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'Ticket' object has no attribute 'items' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket( ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 23, in __init__
+    self.items.append(__item)
+AttributeError: 'Ticket' object has no attribute 'items'

@@ -1,11 +1,39 @@
-class Ticket:
-    def __init__(self):
-        pass
+from Item import Item
 
-    def Process(self, ticket):
-        if 'user' in ticket:
-            print(ticket['user']['displayName'])
-        if 'items' in ticket:
-            for item in ticket['items']:
-                print(str(item['quantity'])+ "  "+ item['description'])
-            
+class Ticket:
+    USER = "user"
+    ITEMS = "items"
+    DISPLAY_NAME = "displayName"
+    EMAIL = "email"
+    TOTAL = "total"
+    PRINT_AT = "printAt"
+    TOTAL = "total"
+    def __init__(self,ticket):
+        if self.USER in ticket:
+            user = ticket[self.USER]
+            self.displayName= user[self.DISPLAY_NAME]  if (self.DISPLAY_NAME in user) else ""
+            self.email=user[self.EMAIL] if self.EMAIL in user else ""
+        self.printAt=ticket[self.PRINT_AT] if self.PRINT_AT in ticket else ""
+        self.total=ticket[self.TOTAL] if self.TOTAL in ticket else 0
+
+        self.items = []
+        if self.ITEMS in ticket:
+            for item in ticket[self.ITEMS]:
+                __item = Item(item)
+                print(str(__item))
+                self.items.append(__item)
+
+    def getDisplayName(self):
+        return self.displayName
+
+    def getEmail(self):
+        return self.email
+
+    def getPrintAt(self):
+        return self.printAt
+
+    def getTotal(self):
+        return self.total
+
+    def __str__(self):
+        return 'Ticket [displayName=' + self.displayName + ', email=' + self.email + ', printAt=' + str(self.printAt) + ', total=' + str(self.total) + 'items=' + str(self.items) + ']' 

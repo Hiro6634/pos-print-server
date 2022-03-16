@@ -9,7 +9,7 @@ from ConfigHelper import ConfigHelper
 import time
 import threading 
 from TicketDb import TicketDb 
-from Ticket import Ticket
+from TicketProcessor import TicketProcessor
 
 config = ConfigHelper()
 class WorkerThread(metaclass=Singleton):
@@ -47,7 +47,7 @@ class PrintSrv:
         logger = log4p.GetLogger(__name__, config='./log4p.json')
         self.log = logger.logger
         self.ticketDb = TicketDb() 
-        self.ticketDb.watchQueue(Ticket.Process)
+        self.ticketDb.watchQueue(TicketProcessor.process)
        #TODO: Eliminar el Worker thread salvo que sea para releer la configuracion 
         self.worker = WorkerThread(Callback)
         self.worker.start()

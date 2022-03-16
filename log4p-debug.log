@@ -312,3 +312,258 @@ TypeError: unsupported operand type(s) for +: 'int' and 'str'
     DataServerPort: 8000
     ProductPollingTime: 30
         
+2022-03-15 23:48:34,709 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 23:48:34,710 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:48:34,711 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 23:48:36,281 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception __init__() takes 2 positional arguments but 3 were given and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket(self, ticket)
+TypeError: __init__() takes 2 positional arguments but 3 were given
+2022-03-15 23:48:36,513 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 23:49:22,176 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:49:22,177 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 23:49:22,178 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 23:49:23,734 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'printAt' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket( ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 18, in __init__
+    self.printAt=ticket[self.USER][self.PRINT_AT] if self.PRINT_AT in ticket else ""
+KeyError: 'printAt'
+2022-03-15 23:49:24,049 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-15 23:49:52,212 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:50:22,251 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:50:52,290 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:51:22,330 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:51:52,371 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:52:08,687 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:52:08,688 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 23:52:08,688 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 23:56:40,216 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 23:56:40,218 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-15 23:56:40,219 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-15 23:58:27,247 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-15 23:58:27,248 DEBUG PrintSrv.py line+25 worker [Thread-8]: timePolling: 30
+2022-03-15 23:58:27,248 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:01:37,823 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:01:37,824 DEBUG PrintSrv.py line+25 worker [Thread-8]: timePolling: 30
+2022-03-16 00:01:37,825 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:04:56,142 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:04:56,143 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:04:56,144 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:05:40,738 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:06:24,181 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:06:24,182 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:06:24,185 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:06:27,435 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception __str__ returned non-string (type NoneType) and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 8, in process
+    print(self.ticket)
+TypeError: __str__ returned non-string (type NoneType)
+2022-03-16 00:06:27,440 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-16 00:07:02,584 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:07:02,585 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:07:02,585 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:07:08,657 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'Ticket' object is not callable and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 8, in process
+    print(self.ticket())
+TypeError: 'Ticket' object is not callable
+2022-03-16 00:07:08,845 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-16 00:08:45,195 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:08:45,196 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:08:45,197 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:08:46,774 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception __str__ returned non-string (type NoneType) and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 8, in process
+    print(str(self.ticket))
+TypeError: __str__ returned non-string (type NoneType)
+2022-03-16 00:08:46,987 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-16 00:09:15,232 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:09:56,744 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:09:56,745 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:09:56,746 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:40:41,468 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:40:41,470 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:40:41,470 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:40:56,157 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'list' object has no attribute 'keys' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket( ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 20, in __init__
+    for key in ticket[self.ITEMS].keys():
+AttributeError: 'list' object has no attribute 'keys'
+2022-03-16 00:40:56,233 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-16 00:41:11,512 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:41:41,553 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:41:55,579 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:41:55,580 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:41:55,581 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:45:05,744 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:45:05,745 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:45:05,746 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:45:38,879 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:45:49,696 ERROR bidi.py line+670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'Ticket' object has no attribute 'items' and will exit.
+Traceback (most recent call last):
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/home/hiro/.local/lib/python3.8/site-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketDb.py", line 28, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/TicketProcessor.py", line 5, in process
+    self.ticket = Ticket( ticket)
+  File "/home/hiro/Documents/Desarrollo/POS/pos-print-server/Ticket.py", line 23, in __init__
+    self.items.append(__item)
+AttributeError: 'Ticket' object has no attribute 'items'
+2022-03-16 00:45:49,960 INFO  bidi.py line+676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
+2022-03-16 00:46:08,919 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:47:07,486 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:47:07,486 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:47:07,487 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:47:37,523 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:48:07,562 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:48:37,602 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:49:11,011 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:49:11,012 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:49:11,014 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:49:41,055 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:49:47,698 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 00:49:47,699 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:49:47,700 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    DataServerAddr: 127.0.0.1
+    DataServerPort: 8000
+    ProductPollingTime: 30
+        
+2022-03-16 00:50:20,578 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:50:51,999 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 00:51:22,045 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
