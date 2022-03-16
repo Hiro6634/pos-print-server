@@ -53,6 +53,7 @@ class FontBuilder:
     H2Bold='H2BOLD'
     H3='H3'
     H4='H4'    
+
     def __init__(self, scale_factor, font_scale):
         self.scale_factor = scale_factor
         self.font_scale = font_scale
@@ -72,13 +73,19 @@ class FontBuilder:
 
 
 class PrintRepository:
+    TEXT='text'
+    FONT='font'
+    ALIGN='align'
     def __init__(self):
         self.config = ConfigHelper()
         self.scale_factor = 30
         self.font_scale = 35
         self.y_direction_scale = -1
 
-    def Printdoc(self, printerName, title, lines):
+    def PrintDoc(self, printerName, title, lines):
+        r=0
+        c=0
+        fontBld = FontBuilder(self.scale_factor, self.font_scale)
         dc = win32ui.CreateDC()
         dc.CreatePrinterDC(printerName)
         dc.SetMapMode(win32con.MM_TWIPS)
@@ -86,14 +93,18 @@ class PrintRepository:
         dc.StartPage()
         dc.SetTextColor(0x00000000)
         dc.SetBkMode(win32con.TRANSPARENT)
+        print(lines)
         for line in lines:
-            dc.SelectObject(FontBuilder.get(line['font']).getFont())
+            font = line[self.FONT]
+            dc.SelectObject(fontBld.get(font).getFont())
+            dc.TextOut(r,c * self.y_direction_scale, line[self.TEXT])
+            c = c +  fontBld.get(font).getHeight()
         dc.EndPage()
         dc.EndDoc()
 
 
-    def TestPrintDoc(self):
-        pass
+    def PrintLine(self, text, font, align):
+        return { self.TEXT: text, self.FONT: font, self.ALIGN: align}
 
     def printTest(self):
         x_y = 0, 0
@@ -130,8 +141,8 @@ class PrintRepository:
         dc.EndDoc()
 
 
-if __name__ == '__main__':   
+''' if __name__ == '__main__':   
     myPrn = PrintRepository()
 
-    myPrn.printTest()
-
+    myPrn.TestPrintDoc()
+ '''

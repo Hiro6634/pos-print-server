@@ -777,3 +777,202 @@ TypeError: 'int' object is not iterable
 2022-03-16 17:22:18,792 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
 2022-03-16 17:22:48,821 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
 2022-03-16 17:23:18,837 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 18:12:57,237 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 18:12:57,239 DEBUG PrintSrv.py line+25 worker [Thread-8 (worker)]: timePolling: 30
+2022-03-16 18:12:57,241 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 18:12:57,756 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:12:57,941 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:12:58,217 INFO  bidi.py line+486 _reopen [Thread-ConsumeBidirectionalStream]: Re-established stream
+2022-03-16 18:12:58,513 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:12:58,777 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:12:58,977 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:12:59,223 INFO  bidi.py line+486 _reopen [Thread-ConsumeBidirectionalStream]: Re-established stream
+2022-03-16 18:12:59,493 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:12:59,800 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:00,050 INFO  bidi.py line+486 _reopen [Thread-ConsumeBidirectionalStream]: Re-established stream
+2022-03-16 18:13:00,267 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:00,555 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:00,798 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:01,044 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:01,182 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:01,447 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:01,616 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:01,849 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:02,099 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:02,332 INFO  bidi.py line+486 _reopen [Thread-ConsumeBidirectionalStream]: Re-established stream
+2022-03-16 18:13:02,610 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:02,763 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:03,071 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:03,316 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:03,583 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:03,736 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:04,099 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:04,282 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:04,531 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:04,760 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:05,103 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:05,445 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:05,644 INFO  bidi.py line+486 _reopen [Thread-ConsumeBidirectionalStream]: Re-established stream
+2022-03-16 18:13:05,921 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:06,138 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:06,449 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:06,725 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:06,881 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:07,191 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:07,469 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:07,654 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:07,837 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 18:13:08,164 INFO  bidi.py line+486 _reopen [Thread-7 (_run)]: Re-established stream
+2022-03-16 19:43:35,255 INFO  TicketProcessor.py +42 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 19:45:54,768 INFO  TicketProcessor.py +43 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 19:54:48,225 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 19:55:35,842 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 19:57:45,244 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 19:58:07,737 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 19:58:18,382 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:06:38,709 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:07:57,612 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:08:56,895 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:11:21,006 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:16:09,887 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:22:16,055 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:30:11,352 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:32:02,634 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:33:02,489 INFO  TicketProcessor.py +47 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:36:10,316 INFO  TicketProcessor.py +51 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:37:53,483 INFO  TicketProcessor.py +51 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:43:57,409 INFO  TicketProcessor.py +51 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:47:36,574 INFO  TicketProcessor.py +51 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 20:58:44,947 INFO  TicketProcessor.py +66 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
