@@ -20,7 +20,6 @@ class Ticket:
         if self.ITEMS in ticket:
             for item in ticket[self.ITEMS]:
                 __item = Item(item)
-                print(str(__item))
                 self.items.append(__item)
 
     def getDisplayName(self):
@@ -35,5 +34,8 @@ class Ticket:
     def getTotal(self):
         return self.total
 
+    def getItems(self):
+        return self.items
+        
     def __str__(self):
         return 'Ticket [displayName=' + self.displayName + ', email=' + self.email + ', printAt=' + str(self.printAt) + ', total=' + str(self.total) + 'items=' + str(self.items) + ']' 
