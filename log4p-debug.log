@@ -740,3 +740,40 @@ TypeError: 'int' object is not iterable
 2022-03-16 09:54:55,479 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
 2022-03-16 09:55:25,518 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
 2022-03-16 09:55:55,558 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 16:51:56,941 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 17:16:24,120 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 17:16:24,121 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:16:24,121 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 17:18:32,053 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 17:18:32,055 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:18:32,055 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 17:19:02,087 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:19:32,102 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:20:02,143 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:20:18,682 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:20:18,682 DEBUG PrintSrv.py line+32 start [MainThread]: WorkerThread Started...
+2022-03-16 17:20:18,683 INFO  PrintSrv.py line+71 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-16 17:20:48,718 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:21:18,749 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:21:48,777 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:22:18,792 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:22:48,821 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30
+2022-03-16 17:23:18,837 DEBUG PrintSrv.py line+25 worker [Thread-9]: timePolling: 30

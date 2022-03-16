@@ -152,15 +152,15 @@ class ConfigHelper(metaclass=Singleton):
         return self.config_dict[self.PRINTER_NAME] \
             if self.PRINTER_NAME in self.config_dict else self.Def_PrinterName
 
-    def getProductPollingTime(self):
+    def getLoopPollingTime(self):
         # self.log.debug(json.dumps(self.config_dict, indent = 2))
-        res = self.config_dict[self.PRODUCT_POLLING_TIME] \
-            if self.PRODUCT_POLLING_TIME in self.config_dict else self.Def_ProductPollingTime    
+        res = self.config_dict[self.LOOP_POLLING_TIME] \
+            if self.LOOP_POLLING_TIME in self.config_dict else self.Def_ProductPollingTime    
         # self.log.debug("PPT:{}".format(res))
         return res
 
-    def setProductStatePollingTimeInSec(self, value):
-        self.config_dict[self.PRODUCT_STATE_POLLING_TIME_IN_SEC] = value
+    def setLoopPollingTime(self, value):
+        self.config_dict[self.LOOP_POLLING_TIME] = value
 
     def __str__(self):
         return """
