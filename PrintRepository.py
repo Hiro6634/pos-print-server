@@ -86,11 +86,14 @@ class PrintRepository:
         dc.StartPage()
         dc.SetTextColor(0x00000000)
         dc.SetBkMode(win32con.TRANSPARENT)
-        #for line in lines:
-            #dc.SelectObject(line[font])
+        for line in lines:
+            dc.SelectObject(FontBuilder.get(line['font']).getFont())
         dc.EndPage()
         dc.EndDoc()
 
+
+    def TestPrintDoc(self):
+        pass
 
     def printTest(self):
         x_y = 0, 0
