@@ -30,22 +30,59 @@ class TicketProcessor:
     
         
     ################################################
-    ## Invocie Formating
+    ## Invoice Formating
     ################################################
     def buildInvoice(self, ticket):
         println = []
         
-        println.append(self.printRepo.PrintLine(config.getTicketHeader(), FontBuilder.H4, "center"))
-        println.append(self.printRepo.PrintLine("", FontBuilder.H2Bold, "center"))
+        println.append(
+            self.printRepo.PrintLine(
+                config.getTicketHeader(), 
+                FontBuilder.ARIAL24BOLD, 
+                PrintRepository.CENTER
+            )
+        )
+        println.append(
+            self.printRepo.PrintLine(
+                "--------------", 
+                FontBuilder.ARIAL12, 
+                PrintRepository.RIGHT
+            )
+        )
         for item in ticket.getItems():
             line = "{} x {} ${}".format(item.getQuantity(), item.getDescription(), item.getSubtotal())
-            println.append(self.printRepo.PrintLine(line, FontBuilder.H3,"left"))
+            println.append(
+                self.printRepo.PrintLine(
+                    line, 
+                    FontBuilder.ARIAL12,
+                    PrintRepository.RIGHT
+                )
+            )
+        println.append(
+            self.printRepo.PrintLine(
+                "--------------", 
+                FontBuilder.ARIAL12, 
+                PrintRepository.RIGHT
+            )
+        )
+
         line = "TOTAL ${}".format(ticket.getTotal())
 
-        println.append(self.printRepo.PrintLine(line, FontBuilder.H4,"right"))
-        println.append(self.printRepo.PrintLine("", FontBuilder.H4,"right"))
-        println.append(self.printRepo.PrintLine("VENDEDOR:"+ticket.getDisplayName(), FontBuilder.H3,"right"))
-        println.append(self.printRepo.PrintLine(ticket.getPrintAt(), FontBuilder.H3,"right"))
+        println.append(
+            self.printRepo.PrintLine(
+                line, 
+                FontBuilder.ARIAL24BOLD,
+                PrintRepository.RIGHT
+            )
+        )
+        println.append(self.printRepo.PrintLine("", FontBuilder.ARIAL12,PrintRepository.LEFT))
+        println.append(
+            self.printRepo.PrintLine(
+                "VENDEDOR:"+ticket.getDisplayName() + "   " + ticket.getPrintAt(), 
+                FontBuilder.COURIERBOLD,
+                PrintRepository.LEFT
+            )
+        )
         return println
 
     ################################################
@@ -54,9 +91,22 @@ class TicketProcessor:
     def buildVoucher(self, item):
         println = []
         
-        println.append(self.printRepo.PrintLine(config.getTicketHeader(), FontBuilder.H3, "center"))
-        println.append(self.printRepo.PrintLine("", FontBuilder.H3, "center"))
-        println.append(self.printRepo.PrintLine(item.getDescription(), FontBuilder.H1Bold,"center"))
+        println.append(
+            self.printRepo.PrintLine(
+                config.getTicketHeader(), 
+                FontBuilder.ARIAL24BOLD, 
+                PrintRepository.CENTER
+            )
+        )
+        println.append(self.printRepo.PrintLine(".", FontBuilder.ARIAL12, PrintRepository.LEFT))
+        println.append(
+            self.printRepo.PrintLine(
+                item.getDescription(), 
+                FontBuilder.H1Bold,
+                PrintRepository.CENTER
+            )
+        )
+        println.append(self.printRepo.PrintLine(".", FontBuilder.H2Bold,PrintRepository.LEFT))
 
         return println
 

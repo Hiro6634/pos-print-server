@@ -1,83 +1,19 @@
 from ConfigHelper import ConfigHelper
 import win32ui
 import win32con
+from PrinterFonts import *
+
 import json
-
-class Font:
-    HEIGHT = 'height'
-    WIDTH = 'width'
-    FONT = 'font'
-    font = {}
-    def __init__(self, height, width, name, weight):
-        self.font[self.HEIGHT] = height
-        self.font[self.WIDTH] = width
-        self.font[self.FONT] = win32ui.CreateFont({
-            'name': name,
-            'height': self.font[self.HEIGHT],
-            'width': self.font[self.WIDTH],
-            'weight': weight
-        })
-    def getFont(self):
-        return self.font[self.FONT]
-    def getHeight(self):
-        return self.font[self.HEIGHT]
-    def getWidth(self):
-        return self.font[self.WIDTH]
-        
-class fontH1Bold(Font):
-    ARIAL = 'arial'
-
-    def __init__(self, scale_factor, font_scale):
-        Font.__init__(self, height=scale_factor*font_scale, width=175, name=self.ARIAL, weight=win32con.FW_EXTRABOLD)
-
-class fontH2Bold(Font):
-    ARIAL = 'arial'
-
-    def __init__(self, scale_factor, font_scale):
-        Font.__init__(self, height=scale_factor*font_scale, width=175, name=self.ARIAL, weight=win32con.FW_BOLD)
-
-class fontH3(Font):
-    COURIER_NEW = 'Courier New'
-
-    def __init__(self, scale_factor, font_scale):
-        Font.__init__(self, height=int(scale_factor*font_scale/3.0), width=90, name=self.COURIER_NEW, weight=win32con.FW_BOLD)
-
-class fontH4(Font):
-    ARIAL = 'arial'
-
-    def __init__(self, scale_factor, font_scale):
-        Font.__init__(self, height=int(scale_factor*font_scale/1.5), width=175, name=self.ARIAL, weight=win32con.FW_BOLD)
-
-class FontBuilder:
-    H1Bold='H1BOLD'
-    H2Bold='H2BOLD'
-    H3='H3'
-    H4='H4'    
-
-    def __init__(self, scale_factor, font_scale):
-        self.scale_factor = scale_factor
-        self.font_scale = font_scale
-
-    def get(self, fontType):
-        match fontType.upper():
-            case self.H1Bold:
-                return fontH1Bold(self.scale_factor, self.font_scale)
-            case self.H2Bold:
-                return fontH2Bold(self.scale_factor, self.font_scale)
-            case self.H3:
-                return fontH3(self.scale_factor, self.font_scale)
-            case self.H4:
-                return fontH4(self.scale_factor, self.font_scale)
-        return fontH4(self.scale_factor, self.font_scale)
-
-
-
+config = ConfigHelper()
 class PrintRepository:
     TEXT='text'
     FONT='font'
     ALIGN='align'
+    CENTER='center'
+    LEFT='left'
+    RIGHT='right'
+    
     def __init__(self):
-        self.config = ConfigHelper()
         self.scale_factor = 30
         self.font_scale = 35
         self.y_direction_scale = -1
@@ -96,12 +32,32 @@ class PrintRepository:
         print(lines)
         for line in lines:
             font = line[self.FONT]
+            text = line[self.TEXT]
             dc.SelectObject(fontBld.get(font).getFont())
-            dc.TextOut(r,c * self.y_direction_scale, line[self.TEXT])
+            dc.TextOut( 
+                self.ALignment(
+                    r, 
+                    line[self.ALIGN], 
+                    len(text)*fontBld.get(font).getWidth()
+                ),
+                c * self.y_direction_scale, 
+                text)
             c = c +  fontBld.get(font).getHeight()
+        
         dc.EndPage()
         dc.EndDoc()
 
+    def ALignment(self, row, alignment, size ):
+        widthPaper = config.getPaperWidthMW()
+        leftSize = 0
+        match alignment:
+            case self.RIGHT:
+                leftSize = widthPaper - size
+                return leftSize
+            case self.CENTER:
+                leftSize = int((widthPaper - size)/2)
+                return leftSize
+        return row
 
     def PrintLine(self, text, font, align):
         return { self.TEXT: text, self.FONT: font, self.ALIGN: align}
@@ -110,7 +66,7 @@ class PrintRepository:
         x_y = 0, 0
         fontBld = FontBuilder(self.scale_factor, self.font_scale)
         print("Starting test...")    
-        printerName = self.config.getPrinterName()
+        printerName = config.getPrinterName()
         print("Printer:" + printerName)
         dc = win32ui.CreateDC()
         dc.CreatePrinterDC(printerName)
@@ -134,15 +90,27 @@ class PrintRepository:
         dc.TextOut(x_y[0], x_y[1] * self.y_direction_scale, "ARACA LA CANA")
         x_y = x_y[0], x_y[1] + fontBld.get(FontBuilder.H2Bold).getHeight()
 
-        dc.SelectObject(fontBld.get(FontBuilder.H3).getFont() )
+        dc.SelectObject(fontBld.get(FontBuilder.COURIERBOLD).getFont() )
         dc.TextOut(x_y[0], x_y[1] * self.y_direction_scale, "AGARRALA")
-        x_y = x_y[0], x_y[1] + fontBld.get(FontBuilder.H3).getHeight()
+        x_y = x_y[0], x_y[1] + fontBld.get(FontBuilder.COURIERBOLD).getHeight()
         dc.EndPage()
         dc.EndDoc()
 
 
-''' if __name__ == '__main__':   
+if __name__ == '__main__':   
+    lines = []
+
     myPrn = PrintRepository()
 
-    myPrn.TestPrintDoc()
- '''
+    lines.append(myPrn.PrintLine("ABCDEM H1B",FontBuilder.H1Bold, PrintRepository.CENTER))
+    lines.append(myPrn.PrintLine("ABCDEM H1B",FontBuilder.H1Bold, PrintRepository.LEFT))
+    lines.append(myPrn.PrintLine("ABCDEM H1B",FontBuilder.H1Bold, PrintRepository.RIGHT))
+    lines.append(myPrn.PrintLine("ABCDEM H2B",FontBuilder.H2Bold, PrintRepository.LEFT))
+    lines.append(myPrn.PrintLine("ABCDEM COURIER_B",FontBuilder.COURIERBOLD, PrintRepository.CENTER))
+    lines.append(myPrn.PrintLine("ABCDEM A24_B",FontBuilder.ARIAL24BOLD, PrintRepository.RIGHT))
+    lines.append(myPrn.PrintLine("123",FontBuilder.ARIAL12, PrintRepository.RIGHT))
+    lines.append(myPrn.PrintLine("ABCDEM A12",FontBuilder.ARIAL12, PrintRepository.LEFT))
+
+    myPrn.PrintDoc(config.getPrinterName(), config.getTicketHeader(), lines)
+
+

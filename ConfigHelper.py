@@ -18,6 +18,7 @@ class ConfigHelper(metaclass=Singleton):
     SIMULATE_PRINTER = 'simulatePrinter'
     PRINTER_NAME = 'PrinterName'
     LOOP_POLLING_TIME = 'LoopPollingTime'
+    PAPER_WIDTH_MW = 'PaperWidthMW'
     initialized = False    
 
     #########################################################
@@ -35,6 +36,8 @@ class ConfigHelper(metaclass=Singleton):
     Def_SimulatePrinter = False
     Def_PrinterName = 'EPSON TM-T20II Receipt'
     Def_LoopPollingTime = 30
+    Def_PaperWithMW = 3500
+
     #########################################################
     ##  Configuration Object
     #########################################################
@@ -161,6 +164,10 @@ class ConfigHelper(metaclass=Singleton):
 
     def setLoopPollingTime(self, value):
         self.config_dict[self.LOOP_POLLING_TIME] = value
+
+    def getPaperWidthMW(self):
+        return self.config_dict[self.PAPER_WIDTH_MW] \
+            if self.PAPER_WIDTH_MW in self.config_dict else self.Def_PaperWithMW
 
     def __str__(self):
         return """

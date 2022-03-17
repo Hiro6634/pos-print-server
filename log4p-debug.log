@@ -976,3 +976,108 @@ TypeError: 'int' object is not iterable
     SimulatePrinter: False
     PrinterName: EPSON TM-T20II Receipt
         
+2022-03-17 12:05:24,037 INFO  TicketProcessor.py +66 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 15:19:35,107 INFO  TicketProcessor.py +66 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 19:50:10,353 INFO  TicketProcessor.py +66 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 19:56:44,885 INFO  TicketProcessor.py +107 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:06:46,271 INFO  TicketProcessor.py +107 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:10:40,779 INFO  TicketProcessor.py +115 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:11:45,024 INFO  TicketProcessor.py +115 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:12:53,934 INFO  TicketProcessor.py +115 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:14:42,667 INFO  TicketProcessor.py +116 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:19:35,854 INFO  TicketProcessor.py +116 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:20:54,516 INFO  TicketProcessor.py +116 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:21:35,810 INFO  TicketProcessor.py +116 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:22:08,243 INFO  TicketProcessor.py +116 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:22:42,823 INFO  TicketProcessor.py +116 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-17 20:26:46,843 INFO  TicketProcessor.py +116 <module> [MainThread]: 
+    PrintServerAddr: 127.0.0.1
+    PrintServerPort: 9000
+    PrintServerUrl: 127.0.0.1:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
