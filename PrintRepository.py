@@ -1,7 +1,5 @@
 from operator import le
 from ConfigHelper import ConfigHelper
-import win32ui
-import win32con
 from PrinterFonts import *
 
 import json
@@ -23,6 +21,7 @@ class PrintRepository:
         r=0
         c=0
         fontBld = FontBuilder(self.scale_factor, self.font_scale)
+        '''
         dc = win32ui.CreateDC()
         dc.CreatePrinterDC(printerName)
         dc.SetMapMode(win32con.MM_TWIPS)
@@ -47,6 +46,7 @@ class PrintRepository:
         
         dc.EndPage()
         dc.EndDoc()
+        '''
 
     def ALignment(self, row, alignment, size ):
         widthPaper = config.getPaperWidthMW()
@@ -69,6 +69,7 @@ class PrintRepository:
         print("Starting test...")    
         printerName = config.getPrinterName()
         print("Printer:" + printerName)
+        '''
         dc = win32ui.CreateDC()
         dc.CreatePrinterDC(printerName)
         dc.SetMapMode(win32con.MM_TWIPS)
@@ -96,7 +97,7 @@ class PrintRepository:
         x_y = x_y[0], x_y[1] + fontBld.get(FontBuilder.COURIERBOLD).getHeight()
         dc.EndPage()
         dc.EndDoc()
-
+        '''
 
 if __name__ == '__main__':   
     lines = []
