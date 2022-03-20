@@ -1,3 +1,4 @@
+from operator import le
 from ConfigHelper import ConfigHelper
 import win32ui
 import win32con
@@ -50,14 +51,14 @@ class PrintRepository:
     def ALignment(self, row, alignment, size ):
         widthPaper = config.getPaperWidthMW()
         leftSize = 0
-        match alignment:
-            case self.RIGHT:
-                leftSize = widthPaper - size
-                return leftSize
-            case self.CENTER:
-                leftSize = int((widthPaper - size)/2)
-                return leftSize
-        return row
+        if alignment==self.RIGHT:
+            leftSize = widthPaper - size
+            return leftSize
+        elif alignment == self.CENTER:
+            leftSize = int((widthPaper-size)/2)
+            return leftSize
+        else:
+            return row
 
     def PrintLine(self, text, font, align):
         return { self.TEXT: text, self.FONT: font, self.ALIGN: align}

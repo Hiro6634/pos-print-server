@@ -54,10 +54,12 @@ class PrintSrv:
         self.ready = False
 
     def loggerInit(self):
+        print("OS: {}", os.name)
         if os.name == "posix":
             logpath="~/AJB/logs/PrintSrv"
         else:
             logpath="C:/AJB/logs/PrintSrv"
+
         logpathlib = pathlib.Path(logpath)
         logpathlib.mkdir( parents=True, exist_ok=True)
 
