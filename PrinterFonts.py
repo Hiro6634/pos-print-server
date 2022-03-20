@@ -109,17 +109,18 @@ class FontBuilder:
         self.font_scale = font_scale
 
     def get(self, fontType):
-        match fontType.upper():
-            case self.H1Bold:
-                return fontH1Bold(self.scale_factor, self.font_scale)
-            case self.H2Bold:
-                return fontH2Bold(self.scale_factor, self.font_scale)
-            case self.COURIERBOLD:
-                return fontCourierBold(self.scale_factor, self.font_scale)
-            case self.ARIAL24BOLD:
-                return fontArial24Bold(self.scale_factor, self.font_scale)
-            case self.ARIAL12:
-                return fontArial12(self.scale_factor, self.font_scale)
-            case self.ARIAL9:
-                return fontArial9(self.scale_factor, self.font_scale)
-        return fontArial12(self.scale_factor, self.font_scale)
+        fontTypeUpper = fontType.upper()
+        if fontTypeUpper == self.H1Bold:
+            return fontH1Bold(self.scale_factor, self.font_scale)
+        elif fontTypeUpper == self.H2Bold:
+            return fontH2Bold(self.scale_factor, self.font_scale)
+        elif fontTypeUpper == self.COURIERBOLD:
+            return fontCourierBold(self.scale_factor, self.font_scale)
+        elif fontTypeUpper == self.ARIAL24BOLD:
+            return fontArial24Bold(self.scale_factor, self.font_scale)
+        elif fontTypeUpper == self.ARIAL12:
+            return fontArial12(self.scale_factor, self.font_scale)
+        elif fontTypeUpper == self.ARIAL9:
+            return fontArial9(self.scale_factor, self.font_scale)
+        else:
+            return fontArial12(self.scale_factor, self.font_scale)
