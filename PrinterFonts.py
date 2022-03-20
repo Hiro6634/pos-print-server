@@ -33,7 +33,8 @@ class fontH1Bold(Font):
             height=scale_factor*font_scale, 
             width=150, 
             name=self.ARIAL, 
-            #weight=win32con.FW_EXTRABOLD)
+            #weight=win32con.FW_EXTRABOLD
+        )
 
 class fontH2Bold(Font):
     ARIAL = 'arial'
@@ -44,7 +45,8 @@ class fontH2Bold(Font):
             height=int(scale_factor*font_scale*.75), 
             width=150, 
             name=self.ARIAL, 
-            #weight=win32con.FW_BOLD)
+            #weight=win32con.FW_BOLD
+        )
 
 class fontCourierBold(Font):
     COURIER_NEW = 'Courier New'
@@ -56,7 +58,7 @@ class fontCourierBold(Font):
             width=75, 
             name=self.COURIER_NEW, 
             #weight=win32con.FW_BOLD 
-            )
+        )
 
 class fontArial24Bold(Font):
     ARIAL = 'arial'
@@ -68,7 +70,7 @@ class fontArial24Bold(Font):
             width=150, 
             name=self.ARIAL, 
             #weight=win32con.FW_BOLD 
-            )
+        )
 
 class fontArial12(Font):
     ARIAL = 'arial'
@@ -80,7 +82,7 @@ class fontArial12(Font):
             width=100, 
             name=self.ARIAL, 
             #weight=win32con.FW_NORMAL
-            )
+        )
 
 class fontArial9(Font):
     ARIAL = 'arial'
@@ -92,7 +94,7 @@ class fontArial9(Font):
             width=75, 
             name=self.ARIAL, 
             #weight=win32con.FW_NORMAL
-            )
+        )
 
 class FontBuilder:
     H1Bold='H1BOLD'
