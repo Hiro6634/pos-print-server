@@ -62,21 +62,28 @@ class FirestoreDb:
 
 #def GetDocumentTest():
 
+def onSnapshot(doc_snapshot, changes, read_time):
+    for doc in doc_snapshot:
+        print('Received document snapshot: ' + doc.id)
+
 cred = credentials.Certificate("ajbpos-firebase-adminsdk-ao7l2-d308d8b1bc.json")
 firebase_admin.initialize_app(cred, {
     'projetctId': 'ajbpos'
 })
 
 db = firestore.client()
-doc_ref = db.collection(u'printers').document(u'PRN1')
+doc_ref = db.collection(u'printers').document(u'PRN1').collection('queue')
 
-doc = doc_ref.get()
+doc = doc_ref.on_snapshot(onSnapshot)
 
+while True:
+    pass
+'''
 if doc.exists:
     print(f'Document data: {doc.to_dict()}')
 else:
     print('No such document')
-
+'''
 # def main2():
 #     firestore = FirestoreDb()
 #     firestore.getDocTestMonolitic()

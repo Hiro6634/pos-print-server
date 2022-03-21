@@ -16,19 +16,36 @@ class TicketProcessor:
 
     def process(self, ticket ):
         ticketObj = Ticket( ticket)
+        '''
         self.printRepo.PrintDoc( \
+            config.getPrinterName(), \
+            config.getTicketHeader(), \
+            self.buildInvoice(ticketObj))        
+        '''
+        self.printDocMock( \
             config.getPrinterName(), \
             config.getTicketHeader(), \
             self.buildInvoice(ticketObj))        
 
         for item in ticketObj.getItems():
             for q in range(0,item.getQuantity()):
+                '''
                 self.printRepo.PrintDoc( \
                     config.getPrinterName(), \
                     config.getTicketHeader(), \
                     self.buildVoucher(item))
-    
-        
+                '''
+                self.printDocMock( \
+                    config.getPrinterName(), \
+                    config.getTicketHeader(), \
+                    self.buildVoucher(item))
+
+    def printDocMock(printerName, header, lines):
+        print("Printer: {}", printerName)
+        print(header)
+        for line in lines:
+            print(line)
+
     ################################################
     ## Invoice Formating
     ################################################
