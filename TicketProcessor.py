@@ -1,7 +1,7 @@
+import cmd
 import log4p
 from Ticket import Ticket
 from PrintRepository import PrintRepository
-from PrintRepository import FontBuilder
 from ConfigHelper import ConfigHelper
 import json
 
@@ -16,54 +16,43 @@ class TicketProcessor:
 
     def process(self, ticket ):
         ticketObj = Ticket( ticket)
-        '''
         self.printRepo.PrintDoc( \
-            config.getPrinterName(), \
-            config.getTicketHeader(), \
-            self.buildInvoice(ticketObj))        
-        '''
-        self.printDocMock( \
             config.getPrinterName(), \
             config.getTicketHeader(), \
             self.buildInvoice(ticketObj))        
 
         for item in ticketObj.getItems():
             for q in range(0,item.getQuantity()):
-                '''
                 self.printRepo.PrintDoc( \
                     config.getPrinterName(), \
                     config.getTicketHeader(), \
-                    self.buildVoucher(item))
-                '''
-                self.printDocMock( \
-                    config.getPrinterName(), \
-                    config.getTicketHeader(), \
-                    self.buildVoucher(item))
-
-    def printDocMock(printerName, header, lines):
-        print("Printer: {}", printerName)
-        print(header)
-        for line in lines:
-            print(line)
+                    self.buildVoucher(item, str(ticketObj.getPrintAt())))
 
     ################################################
     ## Invoice Formating
     ################################################
     def buildInvoice(self, ticket):
         println = []
-        
+        headerFont = PrintRepository.VARELA_ROUND
+        lineFont = PrintRepository.VARELA_ROUND
+        totalFont = PrintRepository.VARELA_ROUND
+        footerFont = PrintRepository.VARELA_ROUND
+
+        #TODO: Hay qie poner los fonts en una coleccion
         println.append(
             self.printRepo.PrintLine(
                 config.getTicketHeader(), 
-                FontBuilder.ARIAL24BOLD, 
-                PrintRepository.CENTER
+                font = headerFont,
+                size=40,
+                align=PrintRepository.CENTER
             )
         )
         println.append(
             self.printRepo.PrintLine(
-                "--------------", 
-                FontBuilder.ARIAL12, 
-                PrintRepository.RIGHT
+                "=============================================", 
+                font = lineFont,
+                size=25,
+                align=PrintRepository.RIGHT
             )
         )
         for item in ticket.getItems():
@@ -71,15 +60,17 @@ class TicketProcessor:
             println.append(
                 self.printRepo.PrintLine(
                     line, 
-                    FontBuilder.ARIAL12,
-                    PrintRepository.RIGHT
+                font = lineFont,
+                size=25,
+                align=PrintRepository.RIGHT
                 )
             )
         println.append(
             self.printRepo.PrintLine(
-                "--------------", 
-                FontBuilder.ARIAL12, 
-                PrintRepository.RIGHT
+                "=============================================", 
+                font = lineFont,
+                size=25,
+                align=PrintRepository.RIGHT
             )
         )
 
@@ -88,42 +79,59 @@ class TicketProcessor:
         println.append(
             self.printRepo.PrintLine(
                 line, 
-                FontBuilder.ARIAL24BOLD,
-                PrintRepository.RIGHT
+                font = totalFont,
+                size=50,
+                align=PrintRepository.RIGHT
             )
         )
-        println.append(self.printRepo.PrintLine("", FontBuilder.ARIAL12,PrintRepository.LEFT))
+        println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
         println.append(
             self.printRepo.PrintLine(
-                "VENDEDOR:"+ticket.getDisplayName() + "   " + ticket.getPrintAt(), 
-                FontBuilder.COURIERBOLD,
-                PrintRepository.LEFT
+                "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()), 
+                font = footerFont,
+                size=20,
+                align=PrintRepository.CENTER
             )
         )
+        println.append(self.printRepo.PrintLine(cmd=PrintRepository.CUT))
         return println
 
     ################################################
     ## Voucher Formating
     ################################################
-    def buildVoucher(self, item):
+    def buildVoucher(self, item, printAt):
+        headerFont = PrintRepository.VARELA_ROUND
+        lineFont = PrintRepository.MPLUS_ROUNDED_EB
+        footerFont = PrintRepository.VARELA_ROUND
         println = []
         
         println.append(
             self.printRepo.PrintLine(
-                config.getTicketHeader(), 
-                FontBuilder.ARIAL24BOLD, 
-                PrintRepository.CENTER
+                config.getTicketHeader(),                                                                                                                       
+                font = headerFont,
+                size=40,
+                align=PrintRepository.CENTER
             )
         )
-        println.append(self.printRepo.PrintLine(".", FontBuilder.ARIAL12, PrintRepository.LEFT))
+        println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
         println.append(
             self.printRepo.PrintLine(
                 item.getDescription(), 
-                FontBuilder.H1Bold,
-                PrintRepository.CENTER
+                font = lineFont,
+                size=150,
+                align=PrintRepository.CENTER
             )
         )
-        println.append(self.printRepo.PrintLine(".", FontBuilder.H2Bold,PrintRepository.LEFT))
+        println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
+        println.append(
+            self.printRepo.PrintLine(
+                printAt, 
+                font = footerFont,
+                size=20,
+                align=PrintRepository.RIGHT
+            )
+        )
+        println.append(self.printRepo.PrintLine(cmd=PrintRepository.CUT))
 
         return println
 

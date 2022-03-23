@@ -6,7 +6,7 @@
     "configurations": [
     
         {
-            "name": "Python: test-printer.py",
+            "name": "Python: PrinterRepository.py",
             "type": "python",
             "request": "launch",
             "program": "${file}",

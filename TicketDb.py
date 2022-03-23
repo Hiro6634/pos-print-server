@@ -18,18 +18,17 @@ class TicketDb:
         for doc in doc_snapshot:
             print(f'Received document snapshot: {doc.id}')
             doc_ref = self.db.collection(u'printers').document(u'PRN1').collection(u'queue').document(doc.id)
-
             ticket = doc_ref.get()
             if ticket.exists:
-                self.callbackFn(self, ticket.to_dict())
+                self.callbackFn( ticket.to_dict())
 
-                #printedTicket_ref = self.db.collection(u'printers').document(u'PRN1').collection(u'printed').document(doc.id)
-                #printedTicket_ref.set(
-                #    ticket.to_dict()
-                #)
+                printedTicket_ref = self.db.collection(u'printers').document(u'PRN1').collection(u'printed').document(doc.id)
+                printedTicket_ref.set(
+                    ticket.to_dict()
+                )
             else:
                 print('No Such element')
-            #self.db.collection(u'printers').document(u'PRN1').collection(u'queue').document(doc.id).delete()
+            self.db.collection(u'printers').document(u'PRN1').collection(u'queue').document(doc.id).delete()
         self.callback_done.set()
 
     def watchQueue(self, callbackFn):

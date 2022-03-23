@@ -298,3 +298,106 @@ Traceback (most recent call last):
   File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 25, in process
     self.printDocMock( \
 AttributeError: 'TicketDb' object has no attribute 'printDocMock'
+2022-03-23 08:29:18,096 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'TicketDb' object has no attribute 'printRepo' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 20, in process
+    self.printRepo.PrintDoc( \
+AttributeError: 'TicketDb' object has no attribute 'printRepo'
+2022-03-23 08:33:06,684 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'TicketDb' object has no attribute 'printRepo' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 19, in process
+    self.printRepo.PrintDoc( \
+AttributeError: 'TicketDb' object has no attribute 'printRepo'
+2022-03-23 08:53:30,798 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception process() takes 2 positional arguments but 3 were given and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+TypeError: process() takes 2 positional arguments but 3 were given
+2022-03-23 08:55:48,536 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception process() takes 2 positional arguments but 3 were given and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+TypeError: process() takes 2 positional arguments but 3 were given
+2022-03-23 08:59:05,655 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception process() takes 2 positional arguments but 3 were given and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
+    self.callbackFn(self, ticket.to_dict())
+TypeError: process() takes 2 positional arguments but 3 were given
+2022-03-23 09:00:06,351 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "DatetimeWithNanoseconds") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + ticket.getPrintAt(),
+TypeError: can only concatenate str (not "DatetimeWithNanoseconds") to str
+2022-03-23 09:02:58,190 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "DatetimeWithNanoseconds") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + ticket.getPrintAt(),
+TypeError: can only concatenate str (not "DatetimeWithNanoseconds") to str
