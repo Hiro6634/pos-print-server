@@ -72,20 +72,14 @@ class PrintRepository:
     OPENS_SANS = 'OpenSans'
     MPLUS_ROUNDED_EB  = 'MPlusRoundedExtraBold'
     
-    #TODO: Pasarlo al ConfigHelper
-    font = 'OpenSans'
-    font_size = 500
-    text_align = LEFT
-    prn_dpi = 203
-    inches_width = 2.83465
-    vendorId = 0x04b8
-    productId = 0x0e15
+    prn_dpi = config.getPrnDpi()
+    inches_width = config.getPrnInchesWidth()
+    vendorId = config.getPrinterVendorId()
+    productId = config.getPrinterProductId()
 
     def __init__(self):
-        self.scale_factor = 30
-        self.font_scale = 35
-        self.y_direction_scale = -1
-
+        self.vendorId = 0x04b8
+        self.productId = 0x0e15
         self.prn = Usb(self.vendorId, self.productId)
 
     def setSize(self, size ):

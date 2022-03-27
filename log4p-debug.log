@@ -1,285 +1,186 @@
-2022-03-22 23:45:02,082 INFO  TicketProcessor.py +139 <module> [MainThread]: 
+2022-03-26 19:50:13,563 INFO  PrintSrv.py +42 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 19:52:16,898 INFO  PrintSrv.py +42 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 20:24:49,691 INFO  PrintSrv.py +42 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 20:26:54,354 INFO  PrintSrv.py +42 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 20:32:57,364 INFO  PrintSrv.py +47 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 20:38:49,879 INFO  PrintSrv.py +49 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 20:45:00,056 INFO  PrintSrv.py +49 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 20:50:53,155 INFO  bidi.py +486 _reopen [Thread-7]: Re-established stream
+2022-03-26 20:52:53,735 INFO  PrintSrv.py +49 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-03-26 21:52:55,142 INFO  bidi.py +486 _reopen [Thread-7]: Re-established stream
+2022-03-26 22:49:54,804 INFO  PrintSrv.py +49 <module> [MainThread]: 
     PrintServerAddr: 127.0.0.1
     PrintServerPort: 9000
     PrintServerUrl: 127.0.0.1:9000
     SimulatePrinter: False
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-22 23:45:59,672 INFO  TicketProcessor.py +139 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-26 23:31:24,061 INFO  PrintSrv.py +49 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-22 23:46:51,992 INFO  TicketProcessor.py +139 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-26 23:35:56,301 INFO  PrintSrv.py +54 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-22 23:50:00,272 INFO  TicketProcessor.py +139 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-26 23:38:00,547 INFO  PrintSrv.py +53 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-22 23:52:14,392 INFO  TicketProcessor.py +139 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-26 23:43:20,601 INFO  PrintSrv.py +53 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-22 23:53:02,372 INFO  TicketProcessor.py +139 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-26 23:48:53,899 INFO  PrintSrv.py +53 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 00:04:03,342 INFO  TicketProcessor.py +140 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-26 23:56:10,957 INFO  PrintSrv.py +56 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 00:05:21,452 INFO  TicketProcessor.py +140 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-26 23:59:38,596 INFO  PrintSrv.py +56 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 00:06:08,172 INFO  TicketProcessor.py +140 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:00:20,980 INFO  PrintSrv.py +56 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 00:07:32,802 INFO  TicketProcessor.py +140 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:01:44,848 INFO  PrintSrv.py +56 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 00:10:05,722 INFO  TicketProcessor.py +140 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:04:03,886 INFO  PrintSrv.py +57 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 08:21:18,942 INFO  TicketProcessor.py +140 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:11:05,005 INFO  PrintSrv.py +61 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 08:23:24,612 INFO  TicketProcessor.py +140 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:20:49,589 INFO  PrintSrv.py +61 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 08:24:50,811 INFO  TicketProcessor.py +142 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:21:46,200 INFO  PrintSrv.py +61 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 08:29:15,323 INFO  PrintSrv.py +41 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:28:10,328 INFO  PrintSrv.py +61 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 08:29:18,096 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'TicketDb' object has no attribute 'printRepo' and will exit.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
-    self._on_response(response)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
-    meth(self, proto.target_change)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
-    self.push(target_change.read_time, target_change.resume_token)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
-    self._snapshot_callback(keys, appliedChanges, read_time)
-  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
-    self.callbackFn(self, ticket.to_dict())
-  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 20, in process
-    self.printRepo.PrintDoc( \
-AttributeError: 'TicketDb' object has no attribute 'printRepo'
-2022-03-23 08:29:18,280 INFO  bidi.py +676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
-2022-03-23 08:32:41,140 INFO  PrintSrv.py +41 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:30:55,001 INFO  PrintSrv.py +61 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 08:33:06,684 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'TicketDb' object has no attribute 'printRepo' and will exit.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
-    self._on_response(response)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
-    meth(self, proto.target_change)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
-    self.push(target_change.read_time, target_change.resume_token)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
-    self._snapshot_callback(keys, appliedChanges, read_time)
-  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
-    self.callbackFn(self, ticket.to_dict())
-  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 19, in process
-    self.printRepo.PrintDoc( \
-AttributeError: 'TicketDb' object has no attribute 'printRepo'
-2022-03-23 08:33:06,815 INFO  bidi.py +676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
-2022-03-23 08:34:03,102 INFO  PrintSrv.py +41 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
+2022-03-27 00:34:20,946 INFO  PrintSrv.py +61 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
     PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
     PrinterName: EPSON TM-T20II Receipt
         
-2022-03-23 08:34:49,316 INFO  PrintSrv.py +41 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
-2022-03-23 08:53:28,158 INFO  PrintSrv.py +42 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
-2022-03-23 08:53:30,798 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception process() takes 2 positional arguments but 3 were given and will exit.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
-    self._on_response(response)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
-    meth(self, proto.target_change)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
-    self.push(target_change.read_time, target_change.resume_token)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
-    self._snapshot_callback(keys, appliedChanges, read_time)
-  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
-    self.callbackFn(self, ticket.to_dict())
-TypeError: process() takes 2 positional arguments but 3 were given
-2022-03-23 08:53:30,928 INFO  bidi.py +676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
-2022-03-23 08:55:13,182 INFO  PrintSrv.py +42 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
-2022-03-23 08:55:48,536 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception process() takes 2 positional arguments but 3 were given and will exit.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
-    self._on_response(response)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
-    meth(self, proto.target_change)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
-    self.push(target_change.read_time, target_change.resume_token)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
-    self._snapshot_callback(keys, appliedChanges, read_time)
-  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
-    self.callbackFn(self, ticket.to_dict())
-TypeError: process() takes 2 positional arguments but 3 were given
-2022-03-23 08:55:48,687 INFO  bidi.py +676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
-2022-03-23 08:58:55,927 INFO  PrintSrv.py +42 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
-2022-03-23 08:59:05,655 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception process() takes 2 positional arguments but 3 were given and will exit.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
-    self._on_response(response)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
-    meth(self, proto.target_change)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
-    self.push(target_change.read_time, target_change.resume_token)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
-    self._snapshot_callback(keys, appliedChanges, read_time)
-  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
-    self.callbackFn(self, ticket.to_dict())
-TypeError: process() takes 2 positional arguments but 3 were given
-2022-03-23 08:59:05,820 INFO  bidi.py +676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
-2022-03-23 08:59:58,700 INFO  PrintSrv.py +42 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
-2022-03-23 09:00:06,351 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "DatetimeWithNanoseconds") to str and will exit.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
-    self._on_response(response)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
-    meth(self, proto.target_change)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
-    self.push(target_change.read_time, target_change.resume_token)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
-    self._snapshot_callback(keys, appliedChanges, read_time)
-  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
-    self.callbackFn( ticket.to_dict())
-  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
-    self.buildInvoice(ticketObj))
-  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
-    "VENDEDOR:"+ticket.getDisplayName() + "          " + ticket.getPrintAt(),
-TypeError: can only concatenate str (not "DatetimeWithNanoseconds") to str
-2022-03-23 09:00:06,493 INFO  bidi.py +676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
-2022-03-23 09:00:53,517 INFO  PrintSrv.py +42 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
-2022-03-23 09:02:58,190 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "DatetimeWithNanoseconds") to str and will exit.
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
-    self._on_response(response)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
-    meth(self, proto.target_change)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
-    self.push(target_change.read_time, target_change.resume_token)
-  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
-    self._snapshot_callback(keys, appliedChanges, read_time)
-  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 23, in on_snapshot
-    self.callbackFn( ticket.to_dict())
-  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
-    self.buildInvoice(ticketObj))
-  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
-    "VENDEDOR:"+ticket.getDisplayName() + "          " + ticket.getPrintAt(),
-TypeError: can only concatenate str (not "DatetimeWithNanoseconds") to str
-2022-03-23 09:02:58,334 INFO  bidi.py +676 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream exiting
-2022-03-23 09:03:26,120 INFO  PrintSrv.py +42 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
-2022-03-23 10:15:46,630 INFO  PrintSrv.py +41 <module> [MainThread]: 
-    PrintServerAddr: 127.0.0.1
-    PrintServerPort: 9000
-    PrintServerUrl: 127.0.0.1:9000
-    SimulatePrinter: False
-    PrinterName: EPSON TM-T20II Receipt
-        
+2022-03-27 01:34:21,843 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 02:34:22,678 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 03:34:23,808 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 04:34:24,839 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 05:34:25,753 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 06:34:26,872 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 07:34:28,091 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 08:34:28,969 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-27 09:34:29,873 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream

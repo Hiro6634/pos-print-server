@@ -2,6 +2,7 @@ import json
 from os import path
 from Singleton import Singleton
 import log4p
+import pathlib
 
 class ConfigHelper(metaclass=Singleton):
     configFile = "Ajbpos.config"
@@ -18,7 +19,11 @@ class ConfigHelper(metaclass=Singleton):
     SIMULATE_PRINTER = 'simulatePrinter'
     PRINTER_NAME = 'PrinterName'
     LOOP_POLLING_TIME = 'LoopPollingTime'
-    PAPER_WIDTH_MW = 'PaperWidthMW'
+    PRINTER_VENDORID = 'PrinterVendorId'
+    PRINTER_PRODUCTID = 'PrinterProductId'
+    PRN_DPI = 'prn_dpi'
+    PRN_INCHES_WIDTH = 'prnInchesWidth'
+    CONFIG_POOLING_TIME_SEC = 'configPoolingTimeSec'
     initialized = False    
 
     #########################################################
@@ -34,20 +39,33 @@ class ConfigHelper(metaclass=Singleton):
     Def_ProductPollingTime = 30
     Def_ProductStatePollingTimeInSec = 10
     Def_SimulatePrinter = False
+    Def_ConfigPoolingTimeSec = 60
+    
     Def_PrinterName = 'EPSON TM-T20II Receipt'
     Def_LoopPollingTime = 30
-    Def_PaperWithMW = 3500
+    Def_PrinterVendorId = 0x04b8
+    Def_PrinterProductId = 0x0e15
+    Def_prn_dpi = 203
+    Def_prn_inches_width = 2.83465
 
     #########################################################
     ##  Configuration Object
     #########################################################
     
     def __init__(self, configFile = ''):
+        self.watchlist = {}
         logger = log4p.GetLogger(__name__)
         self.log = logger.logger
         self.configFile = configFile if len(configFile) > 0 else self.configFile
+        self.lastModificationTime = 0
         self.readConfigFromFile()
         self.initialized = False if self.TERMINAL_ID not in self.config_dict else True
+        
+    def job(self):
+        print("BINGO DOBLE!")
+
+    def watchParam(self, param, watcher):
+        self.watchlist[param] = watcher
 
     def updateParam( self, param, value):
         modified = False
@@ -71,9 +89,18 @@ class ConfigHelper(metaclass=Singleton):
             self.writeConfigToFile()
 
     def readConfigFromFile(self):
-        if path.exists(self.configFile):
-            with open(self.configFile, encoding="utf-8") as json_file:
-                self.config_dict = json.load(json_file)
+        lstModTime = pathlib.Path(self.configFile).stat().st_mtime
+        if lstModTime != self.lastModificationTime:
+            self.lastModificationTime = lstModTime
+            if path.exists(self.configFile):
+                with open(self.configFile, encoding="utf-8") as json_file:
+                    self.config_dict = json.load(json_file)
+                for param in self.config_dict:
+                    if param in self.watchlist:
+                        self.watchlist[param]()
+            print("Configuration File updated")
+        else:
+            print("Configuration File was not modified")
 
     def writeConfigToFile(self):
         print("writeConfigToFile")
@@ -165,9 +192,40 @@ class ConfigHelper(metaclass=Singleton):
     def setLoopPollingTime(self, value):
         self.config_dict[self.LOOP_POLLING_TIME] = value
 
-    def getPaperWidthMW(self):
-        return self.config_dict[self.PAPER_WIDTH_MW] \
-            if self.PAPER_WIDTH_MW in self.config_dict else self.Def_PaperWithMW
+    def setPrinterVendorId(self, value):
+        self.config_dict[self.PRINTER_VENDORID] = value
+    
+    def getPrinterVendorId(self):
+        return self.config_dict[self.PRINTER_VENDORID] \
+            if self.PRINTER_VENDORID in self.config_dict else self.Def_PrinterVendorId
+
+    def setPrinterProductId(self, value):
+        self.config_dict[self.PRINTER_PRODUCTID] = value
+    
+    def getPrinterProductId(self):
+        return self.config_dict[self.PRINTER_PRODUCTID] \
+            if self.PRINTER_PRODUCTID in self.config_dict else self.Def_PrinterProductId
+
+    def setPrnDpi(self, value):
+        self.config_dict[self.PRN_DPI] = value
+    
+    def getPrnDpi(self):
+        return self.config_dict[self.PRN_DPI] \
+            if self.PRN_DPI in self.config_dict else self.Def_prn_dpi
+
+    def setPrnInchesWidth(self, value):
+        self.config_dict[self.PRN_INCHES_WIDTH] = value
+    
+    def getPrnInchesWidth(self):
+        return self.config_dict[self.PRN_INCHES_WIDTH] \
+            if self.PRN_INCHES_WIDTH in self.config_dict else self.Def_prn_inches_width
+
+    def setConfigPoolingTimeSec(self, value):
+        self.config_dict[self.CONFIG_POOLING_TIME_SEC] = value
+    
+    def getConfigPoolingTimeSec(self):
+        return self.config_dict[self.CONFIG_POOLING_TIME_SEC] \
+            if self.CONFIG_POOLING_TIME_SEC in self.config_dict else self.Def_ConfigPoolingTimeSec
 
     def __str__(self):
         return """
@@ -183,3 +241,8 @@ class ConfigHelper(metaclass=Singleton):
             self.getSimulatePrinter(),
             self.getPrinterName())
             
+if __name__=="__main__":
+    config = ConfigHelper()
+
+    while True:
+        pass
