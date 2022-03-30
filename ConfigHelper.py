@@ -3,6 +3,7 @@ from os import path
 from Singleton import Singleton
 import log4p
 import pathlib
+from datetime import datetime
 
 class ConfigHelper(metaclass=Singleton):
     configFile = "Ajbpos.config"
@@ -61,9 +62,6 @@ class ConfigHelper(metaclass=Singleton):
         self.readConfigFromFile()
         self.initialized = False if self.TERMINAL_ID not in self.config_dict else True
         
-    def job(self):
-        print("BINGO DOBLE!")
-
     def watchParam(self, param, watcher):
         self.watchlist[param] = watcher
 
@@ -98,12 +96,10 @@ class ConfigHelper(metaclass=Singleton):
                 for param in self.config_dict:
                     if param in self.watchlist:
                         self.watchlist[param]()
-            print("Configuration File updated")
-        else:
-            print("Configuration File was not modified")
+            now = datetime.now()
+            print(now.strftime("%H:%M:%S") + " - Configuration File updated")
 
     def writeConfigToFile(self):
-        print("writeConfigToFile")
         with open(self.configFile, 'wt', encoding="utf-8") as outfile:
             json.dump(self.config_dict, outfile)
 

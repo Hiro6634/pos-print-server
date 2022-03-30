@@ -3,9 +3,7 @@ from escpos.printer import Usb
 from PIL import Image, ImageDraw, ImageFont
 
 from ConfigHelper import ConfigHelper
-from PrinterFonts import *
 
-import json
 config = ConfigHelper()
 
 
@@ -158,15 +156,20 @@ class PrintRepository:
         self.prn.text("\n")
 
     def PrintDoc(self, printerName, title, lines ):
-        for line in lines:
-            if line.isCmd():
-                if line.getCmd() == self.LF:
-                    self.lf()
-                elif line.getCmd() == self.CUT:
-                    self.cut()
-            else:
-                self.printLine(line.getText(), alignment=line.getAlignment(), font=line.getFont(), size=line.getSize())
-
+        try:
+            for line in lines:
+                if config.getSimulatePrinter():
+                    print(line.getText())
+                else:
+                    if line.isCmd():
+                        if line.getCmd() == self.LF:
+                            self.lf()
+                        elif line.getCmd() == self.CUT:
+                            self.cut()
+                    else:
+                        self.printLine(line.getText(), alignment=line.getAlignment(), font=line.getFont(), size=line.getSize())
+        except:
+            print("Something happened during printing")
 
     def PrintLine(self, text='', font='', size=-1, align='', resize=False, cmd=''):
         return PrnLine( text = text, font = font, size = size, alignment = align, resize = resize, cmd = cmd )

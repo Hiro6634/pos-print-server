@@ -401,3 +401,181 @@ Traceback (most recent call last):
   File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
     "VENDEDOR:"+ticket.getDisplayName() + "          " + ticket.getPrintAt(),
 TypeError: can only concatenate str (not "DatetimeWithNanoseconds") to str
+2022-03-27 10:51:44,843 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception cannot identify image file './p4.png' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 19, in process
+    self.printRepo.PrintDoc( \
+  File "/home/pi/AJB/pos-print-server/PrintRepository.py", line 171, in PrintDoc
+    self.printLine(line.getText(), alignment=line.getAlignment(), font=line.getFont(), size=line.getSize())
+  File "/home/pi/AJB/pos-print-server/PrintRepository.py", line 152, in printLine
+    self.prn.image( './p4.png')
+  File "/usr/local/lib/python3.9/dist-packages/escpos/escpos.py", line 83, in image
+    im = EscposImage(img_source)
+  File "/usr/local/lib/python3.9/dist-packages/escpos/image.py", line 37, in __init__
+    img_original = Image.open(img_source)
+  File "/usr/lib/python3/dist-packages/PIL/Image.py", line 2958, in open
+    raise UnidentifiedImageError(
+PIL.UnidentifiedImageError: cannot identify image file './p4.png'
+2022-03-27 17:10:03,784 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "NoneType") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()),
+TypeError: can only concatenate str (not "NoneType") to str
+2022-03-27 17:24:18,810 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "NoneType") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()),
+TypeError: can only concatenate str (not "NoneType") to str
+2022-03-27 18:00:22,059 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "NoneType") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()),
+TypeError: can only concatenate str (not "NoneType") to str
+2022-03-27 23:16:17,860 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "NoneType") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()),
+TypeError: can only concatenate str (not "NoneType") to str
+2022-03-27 23:19:51,433 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "NoneType") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()),
+TypeError: can only concatenate str (not "NoneType") to str
+2022-03-27 23:21:58,292 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "NoneType") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 22, in process
+    self.buildInvoice(ticketObj))
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 90, in buildInvoice
+    "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()),
+TypeError: can only concatenate str (not "NoneType") to str
+2022-03-28 00:31:57,448 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'Ticket' object has no attribute 'test' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 19, in process
+    if ticketObj.isTest():
+  File "/home/pi/AJB/pos-print-server/Ticket.py", line 44, in isTest
+    return self.test == True
+AttributeError: 'Ticket' object has no attribute 'test'
+2022-03-28 00:31:57,462 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'Ticket' object has no attribute 'test' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 19, in process
+    if ticketObj.isTest():
+  File "/home/pi/AJB/pos-print-server/Ticket.py", line 44, in isTest
+    return self.test == True
+AttributeError: 'Ticket' object has no attribute 'test'
+2022-03-28 00:33:51,406 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'Ticket' object has no attribute 'test' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 27, in on_snapshot
+    self.callbackFn( ticket.to_dict())
+  File "/home/pi/AJB/pos-print-server/TicketProcessor.py", line 19, in process
+    if ticketObj.isTest():
+  File "/home/pi/AJB/pos-print-server/Ticket.py", line 44, in isTest
+    return self.test == True
+AttributeError: 'Ticket' object has no attribute 'test'

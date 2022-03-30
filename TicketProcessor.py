@@ -16,17 +16,73 @@ class TicketProcessor:
 
     def process(self, ticket ):
         ticketObj = Ticket( ticket)
-        self.printRepo.PrintDoc( \
-            config.getPrinterName(), \
-            config.getTicketHeader(), \
-            self.buildInvoice(ticketObj))        
+        if ticketObj.isTest():
+            self.printRepo.PrintDoc( \
+                config.getTerminalId(), \
+                config.getTicketHeader(), \
+                self.buildTestPrint(config.getTerminalId(), ticketObj))        
+        else:
+            self.printRepo.PrintDoc( \
+                config.getPrinterName(), \
+                config.getTicketHeader(), \
+                self.buildInvoice(ticketObj))        
 
-        for item in ticketObj.getItems():
-            for q in range(0,item.getQuantity()):
-                self.printRepo.PrintDoc( \
-                    config.getPrinterName(), \
-                    config.getTicketHeader(), \
-                    self.buildVoucher(item, str(ticketObj.getPrintAt())))
+            for item in ticketObj.getItems():
+                for q in range(0,item.getQuantity()):
+                    self.printRepo.PrintDoc( \
+                        config.getPrinterName(), \
+                        config.getTicketHeader(), \
+                        self.buildVoucher(item, ticketObj.getPrintAt()))
+
+    def buildTestPrint(self, terminalId, ticket):
+        println = []
+        headerFont = PrintRepository.VARELA_ROUND
+        lineFont = PrintRepository.VARELA_ROUND
+        totalFont = PrintRepository.VARELA_ROUND
+        footerFont = PrintRepository.VARELA_ROUND
+
+        try:
+            println.append(
+                self.printRepo.PrintLine(
+                    config.getTicketHeader(), 
+                    font = headerFont,
+                    size=40,
+                    align=PrintRepository.CENTER
+                )
+            )
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
+            println.append(
+                self.printRepo.PrintLine(
+                    "TEST PRINT", 
+                    font = lineFont,
+                    size=150,
+                    align=PrintRepository.CENTER
+                )
+            )
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
+            println.append(
+                self.printRepo.PrintLine(
+                    terminalId, 
+                    font = lineFont,
+                    size=150,
+                    align=PrintRepository.CENTER
+                )
+            )
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
+            println.append(
+                self.printRepo.PrintLine(
+                    ticket.getPrintAt().strftime("%d-%m-%Y %H:%M:%S"), 
+                    font = footerFont,
+                    size=20,
+                    align=PrintRepository.RIGHT
+                )
+            )
+        except:
+            print("something happened while printing Test page ")
+        finally:
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.CUT))
+        
+        return println
 
     ################################################
     ## Invoice Formating
@@ -38,62 +94,65 @@ class TicketProcessor:
         totalFont = PrintRepository.VARELA_ROUND
         footerFont = PrintRepository.VARELA_ROUND
 
-        #TODO: Hay qie poner los fonts en una coleccion
-        println.append(
-            self.printRepo.PrintLine(
-                config.getTicketHeader(), 
-                font = headerFont,
-                size=40,
-                align=PrintRepository.CENTER
+        try:
+            println.append(
+                self.printRepo.PrintLine(
+                    config.getTicketHeader(), 
+                    font = headerFont,
+                    size=40,
+                    align=PrintRepository.CENTER
+                )
             )
-        )
-        println.append(
-            self.printRepo.PrintLine(
-                "=============================================", 
-                font = lineFont,
-                size=25,
-                align=PrintRepository.RIGHT
+            println.append(
+                self.printRepo.PrintLine(
+                    "=============================================", 
+                    font = lineFont,
+                    size=25,
+                    align=PrintRepository.RIGHT
+                )
             )
-        )
-        for item in ticket.getItems():
-            line = "{} x {} ${}".format(item.getQuantity(), item.getDescription(), item.getSubtotal())
+            for item in ticket.getItems():
+                line = "{} x {} ${}".format(item.getQuantity(), item.getDescription(), item.getSubtotal())
+                println.append(
+                    self.printRepo.PrintLine(
+                        line, 
+                    font = lineFont,
+                    size=25,
+                    align=PrintRepository.RIGHT
+                    )
+                )
+            println.append(
+                self.printRepo.PrintLine(
+                    "=============================================", 
+                    font = lineFont,
+                    size=25,
+                    align=PrintRepository.RIGHT
+                )
+            )
+
+            line = "TOTAL ${}".format(ticket.getTotal())
+
             println.append(
                 self.printRepo.PrintLine(
                     line, 
-                font = lineFont,
-                size=25,
-                align=PrintRepository.RIGHT
+                    font = totalFont,
+                    size=50,
+                    align=PrintRepository.RIGHT
                 )
             )
-        println.append(
-            self.printRepo.PrintLine(
-                "=============================================", 
-                font = lineFont,
-                size=25,
-                align=PrintRepository.RIGHT
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
+            println.append(
+                self.printRepo.PrintLine(
+                    ticket.getDisplayName() + "          " + ticket.getPrintAt().strftime("%d-%m-%Y %H:%M:%S"), 
+                    font = footerFont,
+                    size=20,
+                    align=PrintRepository.CENTER
+                )
             )
-        )
-
-        line = "TOTAL ${}".format(ticket.getTotal())
-
-        println.append(
-            self.printRepo.PrintLine(
-                line, 
-                font = totalFont,
-                size=50,
-                align=PrintRepository.RIGHT
-            )
-        )
-        println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
-        println.append(
-            self.printRepo.PrintLine(
-                "VENDEDOR:"+ticket.getDisplayName() + "          " + str(ticket.getPrintAt()), 
-                font = footerFont,
-                size=20,
-                align=PrintRepository.CENTER
-            )
-        )
-        println.append(self.printRepo.PrintLine(cmd=PrintRepository.CUT))
+        except:
+            print("something happened while build ticket")
+        finally:
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.CUT))
         return println
 
     ################################################
@@ -104,34 +163,38 @@ class TicketProcessor:
         lineFont = PrintRepository.MPLUS_ROUNDED_EB
         footerFont = PrintRepository.VARELA_ROUND
         println = []
-        
-        println.append(
-            self.printRepo.PrintLine(
-                config.getTicketHeader(),                                                                                                                       
-                font = headerFont,
-                size=40,
-                align=PrintRepository.CENTER
+
+        try:        
+            println.append(
+                self.printRepo.PrintLine(
+                    config.getTicketHeader(),                                                                                                                       
+                    font = headerFont,
+                    size=40,
+                    align=PrintRepository.CENTER
+                )
             )
-        )
-        println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
-        println.append(
-            self.printRepo.PrintLine(
-                item.getDescription(), 
-                font = lineFont,
-                size=150,
-                align=PrintRepository.CENTER
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
+            println.append(
+                self.printRepo.PrintLine(
+                    item.getDescription(), 
+                    font = lineFont,
+                    size=150,
+                    align=PrintRepository.CENTER
+                )
             )
-        )
-        println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
-        println.append(
-            self.printRepo.PrintLine(
-                printAt, 
-                font = footerFont,
-                size=20,
-                align=PrintRepository.RIGHT
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
+            println.append(
+                self.printRepo.PrintLine(
+                    printAt.strftime("%d-%m-%Y %H:%M:%S"), 
+                    font = footerFont,
+                    size=20,
+                    align=PrintRepository.RIGHT
+                )
             )
-        )
-        println.append(self.printRepo.PrintLine(cmd=PrintRepository.CUT))
+        except:
+            print("something happened while printing build voucher")
+        finally: 
+            println.append(self.printRepo.PrintLine(cmd=PrintRepository.CUT))
 
         return println
 

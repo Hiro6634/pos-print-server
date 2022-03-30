@@ -8,6 +8,7 @@ class Ticket:
     TOTAL = "total"
     PRINT_AT = "printAt"
     TOTAL = "total"
+    TEST = "test"
     def __init__(self,ticket):
         if self.USER in ticket:
             user = ticket[self.USER]
@@ -21,6 +22,7 @@ class Ticket:
             for item in ticket[self.ITEMS]:
                 __item = Item(item)
                 self.items.append(__item)
+        self.test = ticket[self.TEST] if self.TEST in ticket else False
 
     def getDisplayName(self):
         return self.displayName
@@ -36,6 +38,9 @@ class Ticket:
 
     def getItems(self):
         return self.items
-        
+
+    def isTest(self):
+        return self.test == True
+
     def __str__(self):
         return 'Ticket [displayName=' + self.displayName + ', email=' + self.email + ', printAt=' + str(self.printAt) + ', total=' + str(self.total) + 'items=' + str(self.items) + ']' 

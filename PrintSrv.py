@@ -50,8 +50,6 @@ class PrintSrv:
         logpathlib.mkdir( parents=True, exist_ok=True)
         
     def UpdateConfig(self):
-        now = datetime.now()
-        print("Update Config " + now.strftime("%H:%M:%S"))
         config.readConfigFromFile()
 
 srv = PrintSrv()
