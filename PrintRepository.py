@@ -76,9 +76,10 @@ class PrintRepository:
     productId = config.getPrinterProductId()
 
     def __init__(self):
-        self.vendorId = 0x04b8
-        self.productId = 0x0e15
-        self.prn = Usb(self.vendorId, self.productId)
+        if not config.getSimulatePrinter():
+            vId = int(self.vendorId,16)
+            pId = int(self.productId,16)
+            self.prn = Usb(vId, pId)
 
     def setSize(self, size ):
         self.font_size = size
