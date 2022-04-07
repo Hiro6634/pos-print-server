@@ -1,0 +1,145 @@
+2022-04-02 10:14:03,486 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 10:26:31,394 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:28:05,979 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:28:31,552 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:30:36,291 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:32:16,401 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:32:49,269 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:33:25,256 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:34:12,506 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:37:57,058 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:38:10,717 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:38:59,850 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:40:45,273 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 10:44:41,562 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: True
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 11:37:58,190 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 11:37:58,455 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 11:38:12,181 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 11:39:01,210 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 11:39:01,607 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 11:40:46,297 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 11:44:42,922 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 12:37:59,095 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 12:38:13,120 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 12:39:02,274 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 12:40:46,927 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 12:44:43,888 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 13:38:00,038 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 13:38:14,026 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 13:38:14,370 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 13:39:03,221 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 13:40:48,279 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 13:44:44,764 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 14:38:00,932 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 14:38:01,156 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 14:38:14,949 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 14:38:15,217 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 14:39:03,965 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 14:40:49,532 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 14:44:45,679 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 15:38:01,923 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 15:38:02,274 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 15:38:15,955 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 15:39:04,643 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 15:39:04,905 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 16:02:11,754 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 17:21:26,517 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 17:29:00,189 INFO  PrintSrv.py +59 <module> [MainThread]: 
+    PrintServerAddr: 192.168.100.8
+    PrintServerPort: 9000
+    PrintServerUrl: 192.168.100.8:9000
+    SimulatePrinter: False
+    PrinterName: EPSON TM-T20II Receipt
+        
+2022-04-02 18:29:02,166 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-02 18:29:02,789 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream

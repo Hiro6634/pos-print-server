@@ -14,6 +14,9 @@ class TicketProcessor:
         self.log = logger.logger
         self.printRepo = PrintRepository()
 
+    def InitPrinter(self):
+        self.printRepo.initPrinter()
+
     def process(self, ticket ):
         ticketObj = Ticket( ticket)
         if ticketObj.isTest():
@@ -176,7 +179,7 @@ class TicketProcessor:
             println.append(self.printRepo.PrintLine(cmd=PrintRepository.LF))
             println.append(
                 self.printRepo.PrintLine(
-                    item.getDescription(), 
+                    item.getDescription().upper(), 
                     font = lineFont,
                     size=150,
                     align=PrintRepository.CENTER

@@ -1,0 +1,117 @@
+2022-03-31 10:11:17,501 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 11:11:18,349 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 12:11:19,529 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 13:11:20,128 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 14:11:20,865 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 15:11:21,801 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 16:11:22,856 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 17:11:23,701 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 18:11:24,545 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 19:11:25,153 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 19:13:26,011 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 20:13:26,393 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 20:13:26,528 ERROR _plugin_wrapping.py +92 __call__ [Thread-85]: AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x74b0f760>" raised exception!
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/requests.py", line 183, in __call__
+    response = self.session.request(
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/grpc/_plugin_wrapping.py", line 89, in __call__
+    self._metadata_plugin(
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/grpc.py", line 101, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/grpc.py", line 87, in _get_authorization_headers
+    self._credentials.before_request(
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/credentials.py", line 133, in before_request
+    self.refresh(request)
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/service_account.py", line 410, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 193, in jwt_grant
+    response_data = _token_endpoint_request(request, token_uri, body)
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 161, in _token_endpoint_request
+    response_status_ok, response_data = _token_endpoint_request_no_throw(
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 115, in _token_endpoint_request_no_throw
+    response = request(method="POST", url=token_uri, headers=headers, body=body)
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/requests.py", line 189, in __call__
+    six.raise_from(new_exc, caught_exc)
+  File "<string>", line 3, in raise_from
+google.auth.exceptions.TransportError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2022-03-31 20:13:26,775 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 21:13:27,746 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 22:13:28,587 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-03-31 23:13:29,502 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 00:13:30,605 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 01:13:31,672 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 02:13:32,255 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 03:13:33,355 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 04:13:34,392 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 05:13:35,503 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 06:13:36,351 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 07:13:37,181 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 08:13:38,045 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream
+2022-04-01 09:13:39,206 INFO  bidi.py +486 _reopen [Thread-1]: Re-established stream

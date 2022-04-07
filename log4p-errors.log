@@ -579,3 +579,246 @@ Traceback (most recent call last):
   File "/home/pi/AJB/pos-print-server/Ticket.py", line 44, in isTest
     return self.test == True
 AttributeError: 'Ticket' object has no attribute 'test'
+2022-03-31 20:13:26,528 ERROR _plugin_wrapping.py +92 __call__ [Thread-85]: AuthMetadataPluginCallback "<google.auth.transport.grpc.AuthMetadataPlugin object at 0x74b0f760>" raised exception!
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.9/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.9/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.9/http/client.py", line 268, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/requests.py", line 183, in __call__
+    response = self.session.request(
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/grpc/_plugin_wrapping.py", line 89, in __call__
+    self._metadata_plugin(
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/grpc.py", line 101, in __call__
+    callback(self._get_authorization_headers(context), None)
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/grpc.py", line 87, in _get_authorization_headers
+    self._credentials.before_request(
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/credentials.py", line 133, in before_request
+    self.refresh(request)
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/service_account.py", line 410, in refresh
+    access_token, expiry, _ = _client.jwt_grant(
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 193, in jwt_grant
+    response_data = _token_endpoint_request(request, token_uri, body)
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 161, in _token_endpoint_request
+    response_status_ok, response_data = _token_endpoint_request_no_throw(
+  File "/usr/local/lib/python3.9/dist-packages/google/oauth2/_client.py", line 115, in _token_endpoint_request_no_throw
+    response = request(method="POST", url=token_uri, headers=headers, body=body)
+  File "/usr/local/lib/python3.9/dist-packages/google/auth/transport/requests.py", line 189, in __call__
+    six.raise_from(new_exc, caught_exc)
+  File "<string>", line 3, in raise_from
+google.auth.exceptions.TransportError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2022-04-07 11:01:59,515 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception can only concatenate str (not "bool") to str and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 55, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 35, in updateConfig
+    print("SIMULATED: " + prnConfig["simulated"])
+TypeError: can only concatenate str (not "bool") to str
+2022-04-07 13:55:54,269 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception name 'true' is not defined and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 60, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 38, in updateConfig
+    if prnConfig["reboot"] is true:
+NameError: name 'true' is not defined
+2022-04-07 14:03:15,805 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'reboot' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 60, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 37, in updateConfig
+    print("REBOOT: " + ( "True" if prnConfig["reboot"] is True else "False" ))
+KeyError: 'reboot'
+2022-04-07 14:05:40,106 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'reboot' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 60, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 37, in updateConfig
+    print("REBOOT: " + ( "True" if prnConfig["reboot"] is True else "False" ))
+KeyError: 'reboot'
+2022-04-07 14:09:49,657 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'dict' object has no attribute 'has_key' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 60, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 37, in updateConfig
+    reboot = prnConfig["reboot"] if prnConfig.has_key("reboot") else False
+AttributeError: 'dict' object has no attribute 'has_key'
+2022-04-07 14:10:43,524 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'dict' object has no attribute 'has_key' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 60, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 37, in updateConfig
+    if prnConfig.has_key("reboot"):
+AttributeError: 'dict' object has no attribute 'has_key'
+2022-04-07 14:14:49,517 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception the JSON object must be str, bytes or bytearray, not DocumentSnapshot and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 61, in on_configSnapshot
+    self.callbackConfigFn(json.loads(prnConfig))
+  File "/usr/lib/python3.9/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not DocumentSnapshot
+2022-04-07 14:16:44,168 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'dict' object has no attribute 'has_key' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 60, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 37, in updateConfig
+    if prnConfig.has_key("reboot"):
+AttributeError: 'dict' object has no attribute 'has_key'
+2022-04-07 14:19:13,997 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception 'dict_keys' object has no attribute 'has_key' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 60, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 37, in updateConfig
+    print(prnConfig.keys().has_key("reboot"))
+AttributeError: 'dict_keys' object has no attribute 'has_key'
+2022-04-07 14:27:26,974 ERROR bidi.py +670 _thread_main [Thread-ConsumeBidirectionalStream]: Thread-ConsumeBidirectionalStream caught unexpected exception module 'asyncio.subprocess' has no attribute 'call' and will exit.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/dist-packages/google/api_core/bidi.py", line 657, in _thread_main
+    self._on_response(response)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 456, in on_snapshot
+    meth(self, proto.target_change)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 381, in _on_snapshot_target_change_no_change
+    self.push(target_change.read_time, target_change.resume_token)
+  File "/usr/local/lib/python3.9/dist-packages/google/cloud/firestore_v1/watch.py", line 556, in push
+    self._snapshot_callback(keys, appliedChanges, read_time)
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 61, in on_configSnapshot
+    self.callbackConfigFn(prnConfig.to_dict())
+  File "/home/pi/AJB/pos-print-server/PrintSrv.py", line 44, in updateConfig
+    self.ticketDb.onReboot();
+  File "/home/pi/AJB/pos-print-server/TicketDb.py", line 77, in onReboot
+    subprocess.call(['sudo','pi','reboot'])
+AttributeError: module 'asyncio.subprocess' has no attribute 'call'

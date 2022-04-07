@@ -101,7 +101,7 @@ class ConfigHelper(metaclass=Singleton):
 
     def writeConfigToFile(self):
         with open(self.configFile, 'wt', encoding="utf-8") as outfile:
-            json.dump(self.config_dict, outfile)
+            json.dump(self.config_dict, outfile, indent=4 )
 
     def isInitialized(self):
         return self.initialized

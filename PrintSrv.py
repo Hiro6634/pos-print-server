@@ -27,9 +27,27 @@ class PrintSrv:
         self.log = logger.logger
         self.ticketDb = TicketDb() 
         self.ticketDb.watchQueue(TicketProcessor().process)
+        self.ticketDb.watchConfig(self.updateConfig)
         config.watchParam(ConfigHelper.TERMINAL_ID, self.updateWatchQueue)
         config.watchParam(ConfigHelper.CONFIG_POOLING_TIME_SEC, self.setConfigCheck)
 
+    def updateConfig(self, prnConfig):
+        print("SIMULATED: " + ( "True" if prnConfig["simulated"] is True else "False" ))
+        print("TICKET HEADER: "+ prnConfig["ticket_header"])
+        if "reboot" in prnConfig.keys():
+            reboot = prnConfig["reboot"]
+        else:
+            reboot = False
+
+        print("REBOOT: " + ( "True" if reboot is True else "False" ))
+        if (reboot):
+            self.ticketDb.onReboot();
+        if config.getSimulatePrinter() and not prnConfig["simulated"]:
+            print("Printer Initializing...")
+            TicketProcessor().InitPrinter()
+        config.setSimulatePrinter(prnConfig["simulated"])
+        config.setTicketHeader(prnConfig["ticket_header"])
+        config.writeConfigToFile();
 
     def setConfigCheck(self):
         if self.configJob != 0:
