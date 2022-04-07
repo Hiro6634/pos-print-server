@@ -32,6 +32,7 @@ class PrintSrv:
         config.watchParam(ConfigHelper.CONFIG_POOLING_TIME_SEC, self.setConfigCheck)
 
     def updateConfig(self, prnConfig):
+        killself = False
         print("SIMULATED: " + ( "True" if prnConfig["simulated"] is True else "False" ))
         print("TICKET HEADER: "+ prnConfig["ticket_header"])
         if "reboot" in prnConfig.keys():
@@ -41,13 +42,21 @@ class PrintSrv:
 
         print("REBOOT: " + ( "True" if reboot is True else "False" ))
         if (reboot):
-            self.ticketDb.onReboot();
+            killself = True
+
         if config.getSimulatePrinter() and not prnConfig["simulated"]:
             print("Printer Initializing...")
-            TicketProcessor().InitPrinter()
+            #TicketProcessor().InitPrinter()
+            killself = True
+
+
         config.setSimulatePrinter(prnConfig["simulated"])
         config.setTicketHeader(prnConfig["ticket_header"])
         config.writeConfigToFile();
+
+        #TODO: Hasta póder resolver el tema de dessubscribirse del snapshot
+        if killself:
+            self.ticketDb.onReboot()
 
     def setConfigCheck(self):
         if self.configJob != 0:
