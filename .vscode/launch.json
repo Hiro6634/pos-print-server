@@ -13,7 +13,7 @@
             "console": "integratedTerminal",
             "justMyCode": true,
             "args":["-t","'Hello World'","-f","OpenSansBold"],
-            "sudo": true
+            //"sudo": true
         }
     ]
 }

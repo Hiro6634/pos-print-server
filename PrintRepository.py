@@ -78,7 +78,7 @@ class PrintRepository:
     def __init__(self):
         self.vendorId = 0x04b8
         self.productId = 0x0e15
-        self.prn = Usb(self.vendorId, self.productId)
+        #self.prn = Usb(self.vendorId, self.productId)
 
     def setSize(self, size ):
         self.font_size = size
